@@ -3,7 +3,8 @@
     position: relative;
 }
 
-#footer {
+footer {
     align-items: center;
     justify-content: center;
+    display: block;
 }
