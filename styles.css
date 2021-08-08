@@ -3,8 +3,16 @@
     position: relative;
 }
 
+.link {
+    color: rgb(0, 119, 255);
+}
+
+#contact {
+    color: rgb(0, 119, 255);
+}
+
 footer {
     align-items: center;
-    justify-content: center;
+    text-align: center;
     display: block;
 }
