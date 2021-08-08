@@ -1,0 +1,9 @@
+* {
+    font-family: "Inter", Helvetica, sans-serif;
+    position: relative;
+}
+
+#footer {
+    align-items: center;
+    justify-content: center;
+}
