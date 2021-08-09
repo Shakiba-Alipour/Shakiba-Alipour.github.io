@@ -18,7 +18,11 @@
     color: rgb(255, 138, 29);
 }
 
-#contact {
+li{
+    display: list-item;
+}
+
+.title {
     color: rgb(255, 123, 0);
 }
 
