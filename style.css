@@ -4,7 +4,7 @@
     position: relative;
   }
 
-  #nav-container {
+  header {
     border-top: 0px solid !important;
     position: sticky;
     top: 0px;
