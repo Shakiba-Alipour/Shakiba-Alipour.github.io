@@ -8,34 +8,46 @@
     text-decoration: none;
   }
 
+  #header-nav {
+    position: sticky !important;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    z-index: 9999;
+  }
+
   header {
     border-top: 0px solid !important;
     position: fixed;
     background: rgb(238, 218, 170);
     box-shadow: rgb(238, 218, 170);
-    height: 5%;
+    height: 8%;
     width: 100%;
+    align-items: center;
   }
 
   #site-name {
     color: black !important;
-    left: 1%;
+    display: inline-block;
+    float: left;
   }
 
   #navigator {
     display: inline-block;
     list-style: none;
-    right: 10px;
+    float: right;
   }
 
   #navigator li {
     display: inline-block;
-    margin-left: 20px;
-    bottom: 5px;
+    margin-left: 1%;
+    margin-right: 0.5%;
+    text-rendering: optimizeLegibility;
   }
 
-  body{
+  body {
     width: 100%;
+    position: relative;
   }
 
   .title {
@@ -51,12 +63,16 @@
     max-height: 30px;
   }
 
-  h4 {
+  strong {
     color: rgb(255, 138, 29);
   }
 
   li {
     display: list-item;
+  }
+
+  #sublist {
+    list-style: inside;
   }
 
   footer {
