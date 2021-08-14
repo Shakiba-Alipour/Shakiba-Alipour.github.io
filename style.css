@@ -68,6 +68,11 @@
     position: relative;
   }
 
+  body section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .title {
     color: rgb(255, 123, 0);
   }
@@ -89,7 +94,8 @@
     display: list-item;
   }
 
-  #skills ul {
+  #skills ul,
+  #experiences ul {
     list-style: none;
   }
 
