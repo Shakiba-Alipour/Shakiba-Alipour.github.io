@@ -89,8 +89,17 @@
     display: list-item;
   }
 
-  #sublist {
-    list-style: inside;
+  #skills ul {
+    list-style: none;
+  }
+
+  .sublist {
+    list-style: inside !important;
+  }
+
+  .sublist li {
+    margin-bottom: 1%;
+    margin-top: 1%;
   }
 
   footer {
