@@ -1,3 +1,10 @@
+/*
+Red Orange: #9F2B00
+Orange: #D37506
+Peter: #D3D3CB
+Taupe: #ADA7A7
+*/
+
 @media screen and (max-device-width: 1500px) and (max-device-height: 1500px) {
   * {
     font-family: "Inter", Helvetica, sans-serif;
@@ -16,29 +23,28 @@
     width: 100%;
   }
 
-  #header-nav {
+  #navigator {
     display: flex;
     overflow: hidden;
     z-index: 9999;
     position: fixed;
-    background: rgb(238, 218, 170);
-    box-shadow: rgb(238, 218, 170);
+    background: #ada7a7;
     height: 8%;
     width: 100%;
     align-items: center;
   }
 
   #site-name {
-    color: black !important;
+    color: #000000 !important;
     display: inline-block;
     left: 2%;
     float: left;
   }
 
-  #navigator {
-    float: right !important;
+  #list-navigator {
+    float: center !important;
     text-align: right;
-    width: 80%;
+    width: 100%;
     position: absolute;
     right: 2%;
     display: inline;
@@ -54,11 +60,10 @@
   }
 
   #navigator li a {
-    color: black !important;
+    color: #000000 !important;
   }
 
   body {
-    height: 100%;
     width: 100%;
     padding-left: 0%;
     padding-top: 0%;
