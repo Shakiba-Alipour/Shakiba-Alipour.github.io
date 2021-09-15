@@ -5,7 +5,7 @@ Peter: #D3D3CB
 Taupe: #ADA7A7
 */
 
-@media screen and (max-device-width: 2000px) and (max-device-height: 2000px) {
+@media screen {
     * {
         font-family: "Inter", Helvetica, sans-serif;
         position: relative;
