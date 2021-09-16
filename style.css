@@ -17,6 +17,7 @@ media query:
     * {
         font-family: "Inter", Helvetica, sans-serif;
         position: relative;
+        scroll-behavior: smooth;
     }
     a {
         text-decoration: none;
@@ -62,9 +63,11 @@ media query:
         padding-top: 0%;
         margin-top: 0%;
         margin-left: 0%;
-        background-color: #cbd2d9;
+        background-color: #6f8191;
     }
-    #main-content {
+    main {
+        width: 90% !important;
+        background-color: #cbd2d9;
         display: grid;
         grid-auto-flow: row;
         gap: 1%;
