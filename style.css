@@ -67,9 +67,11 @@ media query:
     #main-content {
         display: grid;
         grid-auto-flow: row;
-        gap: 1.5%;
+        gap: 1%;
         padding-left: 10em;
         padding-right: 10em;
+        padding-top: 4em;
+        padding-bottom: 4em;
     }
     .title {
         color: #9F2B00;
