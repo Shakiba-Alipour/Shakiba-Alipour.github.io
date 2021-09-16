@@ -5,20 +5,21 @@ Peter: #D3D3CB
 Taupe: #ADA7A7
 */
 
-@media screen {
+
+/*
+media query:
+320 - 480px for small phones such as iPhone 6, 7, and 5
+478 - 768px for Tablets and iPads
+1025 - 1200px for desktops and large screens
+*/
+
+@media screen and (max-device-width: 2000px) and (max-device-height: 2000px) {
     * {
         font-family: "Inter", Helvetica, sans-serif;
         position: relative;
     }
     a {
         text-decoration: none;
-    }
-    header {
-        position: sticky;
-        overflow: hidden;
-        z-index: 9999;
-        height: 8%;
-        width: 100%;
     }
     #navigator {
         display: flex;
@@ -61,15 +62,18 @@ Taupe: #ADA7A7
         padding-top: 0%;
         margin-top: 0%;
         margin-left: 0%;
-        position: relative;
         background-color: #d3d3cd;
     }
-    body section {
-        padding-left: 10%;
-        padding-right: 10%;
+    #main-content {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 1.5%;
+        padding-left: 10em;
+        padding-right: 10em;
     }
     .title {
         color: #9F2B00;
+        font-size: 1.25em;
     }
     .link {
         color: #D37506;
