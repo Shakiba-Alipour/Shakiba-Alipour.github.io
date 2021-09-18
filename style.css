@@ -59,6 +59,7 @@ media query:
     }
     body {
         width: 100%;
+        align-items: center;
         padding-left: 0%;
         padding-top: 0%;
         margin-top: 0%;
@@ -66,11 +67,9 @@ media query:
         background-color: #6f8191;
     }
     #main-content {
-        width: 90%;
         border-radius: 2em;
-        gap: 1%;
-        padding-left: 10em;
-        padding-right: 10em;
+        padding-left: 20em;
+        padding-right: 20em;
         padding-top: 4em;
         padding-bottom: 4em;
     }
