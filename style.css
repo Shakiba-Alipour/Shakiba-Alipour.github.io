@@ -70,8 +70,11 @@ media query:
         border-radius: 2em;
         padding-left: 20em;
         padding-right: 20em;
-        padding-top: 4em;
+        padding-top: 8em;
         padding-bottom: 4em;
+    }
+    #main-content div {
+        margin-bottom: 3.5em;
     }
     .title {
         color: #f2630d;
