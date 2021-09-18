@@ -64,14 +64,17 @@ media query:
         padding-top: 0%;
         margin-top: 0%;
         margin-left: 0%;
-        background-color: #6f8191;
+        background-color: #cbd2d9;
     }
     #main-content {
-        border-radius: 2em;
-        padding-left: 20em;
-        padding-right: 20em;
-        padding-top: 8em;
-        padding-bottom: 4em;
+        /*background-position: 20em 20em;
+        background-size: 80% auto;
+        background-position-x: 19em;
+        background-position-y: 7em;
+        border-radius: 1em;
+        background-color: #cbd2d9;
+        */
+        padding: 8em 20em 4em 20em;
     }
     #main-content div {
         margin-bottom: 3.5em;
@@ -108,6 +111,6 @@ media query:
         align-items: center;
         text-align: center;
         display: block;
-        color: #cbd2d9;
+        color: #6f8191;
     }
 }
