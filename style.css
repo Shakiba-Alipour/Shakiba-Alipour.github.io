@@ -87,18 +87,17 @@ media query:
         color: #f2630d;
     }
     .icon {
-        max-width: 30px;
-        max-height: 30px;
-    }
-    strong {
-        color: #f2630d;
+        max-width: 53.74px;
+        max-height: 52.63px;
     }
     li {
         display: list-item;
-        list-style: none;
     }
     #skills ul,
     #experiences ul {
+        list-style: none;
+    }
+    #education-list{
         list-style: none;
     }
     .sublist {
