@@ -13,31 +13,35 @@ media query:
 1025 - 1200px for desktops and large screens
 */
 
-@media screen and (max-device-width: 2000px) and (max-device-height: 2000px) {
+@media screen and (max-device-width: 1920px) and (max-device-height: 1080px) {
     * {
         font-family: "Inter", Helvetica, sans-serif;
         position: relative;
         scroll-behavior: smooth;
     }
+
     a {
         text-decoration: none;
     }
+
     #navigator {
         display: flex;
         overflow: hidden;
         z-index: 9999;
         position: fixed;
-        background: #3d4249;
-        height: 8%;
+        background: #6F8191;
+        height: 10%;
         width: 100%;
         align-items: center;
+        top: 0%;
     }
+
     #site-name {
         color: #cbd2d9 !important;
         display: inline-block;
         left: 2%;
-        float: left;
     }
+
     #list-navigator {
         float: center !important;
         text-align: right;
@@ -48,69 +52,97 @@ media query:
         list-style: none;
         justify-content: end !important;
     }
+
     #navigator li {
         display: inline-flex;
         margin-left: 1%;
         margin-right: 1%;
         text-rendering: optimizeLegibility;
+        font-size: medium;
     }
+
     #navigator li a {
         color: #cbd2d9 !important;
     }
+
     body {
         width: 100%;
-        align-items: center;
         padding-left: 0%;
         padding-top: 0%;
         margin-top: 0%;
         margin-left: 0%;
-        background-color: #cbd2d9;
+        background-color: #6F8191;
     }
+
     #main-content {
-        /*background-position: 20em 20em;
-        background-size: 80% auto;
-        background-position-x: 19em;
-        background-position-y: 7em;
-        border-radius: 1em;
         background-color: #cbd2d9;
-        */
-        padding: 8em 20em 4em 20em;
+        padding: 4% 7% 4% 7%;
+        margin-top: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border-radius: 5%;
+        position: relative;
     }
+
     #main-content div {
         margin-bottom: 3.5em;
     }
+
     .title {
-        color: #f2630d;
+        color: #f2630d !important;
         font-size: 1.25em;
     }
+
     .link {
-        color: #f2630d;
+        color: #f2630d !important;
     }
+
     .icon {
-        max-width: 53.74px;
-        max-height: 52.63px;
+        max-width: 40px;
+        max-height: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
+
     li {
         display: list-item;
     }
+
     #skills ul,
-    #experiences ul {
+    #experiences ul,
+    #education-list,
+    #contact ul {
         list-style: none;
     }
-    #education-list{
-        list-style: none;
+
+    #subtitle {
+        color: #3d4249 !important;
+        font-weight: bold;
     }
+
     .sublist {
         list-style: inside !important;
     }
+
     .sublist li {
         margin-bottom: 1%;
         margin-top: 1%;
     }
+
+    .list {
+
+        padding-left: 0px !important;
+    }
+
     footer {
         align-items: center;
         text-align: center;
         display: block;
-        color: #6f8191;
+        color: #CBD2D9;
+        height: min-content;
+    }
+
+    #copyright {
+        align-content: center;
     }
 }
