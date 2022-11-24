@@ -41,11 +41,10 @@
   --dl-color-orange-gray-ff5400: #ff5400ff;
   --dl-color-orange-gray-ffffff: #ffffffff;
 }
-
 .teleport-show {
   display: flex !important;
+  transform: none !important;
 }
-
 .list {
   width: 100%;
   margin: 1em 0px 1em 0px;
@@ -54,7 +53,6 @@
   list-style-type: none;
   list-style-position: outside;
 }
-
 .button {
   color: var(--dl-color-gray-black);
   display: inline-block;
@@ -65,11 +63,9 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
-
 .list-item {
   display: list-item;
 }
-
 .textarea {
   color: var(--dl-color-gray-black);
   cursor: auto;
@@ -80,7 +76,6 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
-
 .input {
   color: var(--dl-color-gray-black);
   cursor: auto;
@@ -91,7 +86,6 @@
   border-radius: 4px;
   background-color: var(--dl-color-gray-white);
 }
-
 .icon {
   fill: #D9D9D9;
   width: 24px;
@@ -99,7 +93,6 @@
   margin: var(--dl-space-space-unit);
   text-decoration: none;
 }
-
 .contact {
   margin: 0px;
   display: flex;
@@ -116,7 +109,6 @@
   justify-content: center;
   background-color: var(--dl-color-template-e0dad5);
 }
-
 .skills {
   width: 100%;
   display: flex;
@@ -130,7 +122,6 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
 }
-
 .footer {
   width: 100%;
   display: flex;
@@ -143,7 +134,6 @@
   padding-bottom: 32px;
   justify-content: space-between;
 }
-
 .title {
   flex: 0 0 auto;
   width: 100%;
@@ -152,7 +142,6 @@
   display: flex;
   align-items: flex-start;
 }
-
 .experiences {
   flex: 0 0 auto;
   width: 100%;
@@ -160,7 +149,6 @@
   display: flex;
   align-items: flex-start;
 }
-
 .awards {
   width: 100%;
   display: flex;
@@ -169,14 +157,12 @@
   align-items: center;
   flex-direction: column;
 }
-
 .link {
   color: var(--dl-color-gray-500);
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .l {
   top: 0px;
   fill: var(--dl-color-template-424249);
@@ -187,8 +173,7 @@
   margin: auto;
   position: absolute;
 }
-
-.section-Text {
+.Section-Text {
   font-size: 18px;
   font-family: Playfair Display;
   font-weight: 600;
@@ -197,8 +182,7 @@
   text-transform: none;
   text-decoration: none;
 }
-
-.card-Text {
+.Card-Text {
   font-size: 16px;
   font-style: normal;
   font-family: Playfair Display;
@@ -208,8 +192,7 @@
   text-transform: none;
   text-decoration: none;
 }
-
-.content {
+.Content {
   font-size: 16px;
   font-family: Arial;
   font-weight: 400;
@@ -217,8 +200,7 @@
   text-transform: none;
   text-decoration: none;
 }
-
-.card-Heading {
+.Card-Heading {
   font-size: 24px;
   font-style: normal;
   font-family: Overpass;
@@ -227,8 +209,7 @@
   text-transform: none;
   text-decoration: none;
 }
-
-.anchor {
+.Anchor {
   font-size: 16px;
   font-family: Overpass;
   font-weight: 700;
@@ -236,8 +217,7 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-
-.navbar-Link {
+.Navbar-Link {
   font-size: 24px;
   font-family: Overpass;
   font-weight: 700;
@@ -245,8 +225,7 @@
   text-transform: none;
   text-decoration: none;
 }
-
-.section-Heading {
+.Section-Heading {
   font-size: 48px;
   font-family: Overpass;
   font-weight: 900;
@@ -254,7 +233,6 @@
   text-transform: none;
   text-decoration: none;
 }
-
 @media(max-width: 1600px) {
   .footer {
     left: 0px;
@@ -263,35 +241,29 @@
     position: absolute;
     background-color: var(--dl-color-template-424249);
   }
-
   .title {
     height: 73px;
   }
-
   .experiences {
     height: 73px;
     flex-direction: column;
   }
 }
-
 @media(max-width: 1200px) {
   .skills {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-
   .footer {
     bottom: 0px;
     position: static;
     max-width: auto;
   }
-
   .experiences {
     height: auto;
     position: relative;
     flex-direction: column;
   }
-
   .link {
     color: var(--dl-color-gray-500);
     width: auto;
@@ -308,18 +280,15 @@
     padding-right: 32px;
     padding-bottom: 0px;
   }
-
   .awards {
     padding-left: 32px;
     padding-right: 32px;
   }
 }
-
 @media(max-width: 479px) {
   .footer {
     padding: var(--dl-space-space-unit);
   }
-
   .awards {
     padding-top: 32px;
     padding-left: var(--dl-space-space-unit);
