@@ -1,0 +1,26 @@
+#home-section {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  width: 60%;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#name {
+  font-size: 2.8rem;
+}
+
+#home-description {
+  color: #333;
+  font-size: 1.45rem;
+  text-align: center;
+  hyphens: auto;
+  width: 100%;
+  line-height: 1.6;
+  text-justify: inter-word;
+}

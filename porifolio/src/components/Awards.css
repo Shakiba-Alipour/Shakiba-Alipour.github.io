@@ -1,0 +1,57 @@
+.awards_section {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section_title {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 6%;
+}
+
+.timeline {
+  width: 98%;
+}
+
+.award_card {
+  display: flex;
+  align-items: start !important;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  padding-right: 8%;
+}
+
+.ant-card-head-title {
+  white-space: normal !important;
+  text-align: left;
+}
+
+.ant-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#year {
+  width: fit-content;
+  margin-bottom: 6%;
+}
+
+.description {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.badges {
+  margin-right: 5%;
+}

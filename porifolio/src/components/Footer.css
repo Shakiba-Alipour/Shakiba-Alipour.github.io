@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  background-color: #333;
+  height: 6rem;
+  z-index: 10;
+  bottom: 100;
+  display: flex;
+}
+
+#footer_container {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#copy-right {
+  color: #fff;
+  width: fit-content;
+}
+
+#logo_container {
+  width: 20%;
+  display: flex;
+  align-items: start;
+}
+
+.logo {
+  color: #fff;
+  font-size: x-large;
+  margin-right: 20%;
+}
