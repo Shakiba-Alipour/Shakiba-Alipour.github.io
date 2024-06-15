@@ -1,6 +1,6 @@
 import { LinkOutlined } from "@ant-design/icons";
 
-export function Experience({
+export function SingleExperience({
   role,
   company,
   logo,
