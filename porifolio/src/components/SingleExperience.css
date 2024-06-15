@@ -4,10 +4,17 @@
   align-items: center;
   width: 80%;
   margin-top: 3%;
-  border-style: groove;
+  border-style: solid;
   border-radius: 1rem;
+  border-width: thin;
+  border-color: lightgray;
   padding: 2%;
   align-self: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.experience:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .company-logo {
