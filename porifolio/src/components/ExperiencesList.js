@@ -29,7 +29,7 @@ const experiencesList = [
   {
     role: "Treasurer",
     company:
-      "CULTURAL, ARTISTIC, RELIGIOS AND SOCIAL CLUBS OF FERDOWSI UNIVERSITY OF MASHHAD",
+      "CULTURAL, ARTISTIC, RELIGIOUS AND SOCIAL CLUBS OF FERDOWSI UNIVERSITY OF MASHHAD",
     logo: KanoonLogo,
     url: "https://www.instagram.com/kanoonnews/",
     duration: "Dec 2022 - Dec 2023",
