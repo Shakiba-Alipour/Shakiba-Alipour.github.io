@@ -73,6 +73,7 @@ export function ExperiencesList() {
   return (
     <div id="experiences-section">
       <h1 className="title">Experiences</h1>
+      {/* Three first single experiences */}
       {experiencesList.slice(0, 3).map((exp, index) => (
         <SingleExperience
           key={index}
