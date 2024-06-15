@@ -1,0 +1,55 @@
+.experience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+  margin-top: 3%;
+  border-style: groove;
+  border-radius: 1rem;
+  padding: 2%;
+  align-self: center;
+}
+
+.company-logo {
+  width: 10rem;
+}
+
+#company-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.company-website {
+  font-size: large;
+  color: #575866;
+  margin-left: 2%;
+}
+
+.company-name {
+  color: #575866;
+  width: fit-content;
+}
+
+.experience-info {
+  width: 100%;
+  margin-left: 5%;
+}
+
+#experience-main-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-duration {
+  height: fit-content;
+  display: inherit;
+  align-self: center;
+  font-size: medium;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+.experience-description {
+  text-align: left;
+}

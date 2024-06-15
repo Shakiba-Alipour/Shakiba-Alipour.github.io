@@ -1,6 +1,7 @@
 import { SingleExperience } from "./SingleExperience";
 import { SeriesOfExperiences } from "./SeriesOfExperiences";
 import { Timeline } from "antd";
+import "./ExperiencesList.css";
 
 // import logos
 import FUMLogo from "../assets/logos/FUM.png";
@@ -23,8 +24,7 @@ const experiencesList = [
     logo: HamraheAvalLogo,
     url: "https://mci.ir/",
     duration: "Jul 2022 - Sep 2022",
-    description: `Examinned the configuration of mobile networks and different generations of mobile networks especially the second and the third generation.
-      Programmed a java application to examine final site survey reports and find the differences per update`,
+    description: `Examinned the configuration of mobile networks and different generations of mobile networks especially the second and the third generation. Programmed a java application to examine final site survey reports and find the differences per update`,
   },
   {
     role: "Treasurer",
@@ -33,8 +33,7 @@ const experiencesList = [
     logo: KanoonLogo,
     url: "https://www.instagram.com/kanoonnews/",
     duration: "Dec 2022 - Dec 2023",
-    description: `Managed all university clubs’ financial transactions.
-    Managed clubs’ annual budget`,
+    description: `Managed all university clubs’ financial transactions. Managed clubs’ annual budget`,
   },
   {
     role: "Board Member and Treasurer",
@@ -42,10 +41,7 @@ const experiencesList = [
     logo: MusicClubLogo,
     url: "https://www.instagram.com/ferdowsi_music_club/",
     duration: "Nov 2022 - Sep 2023",
-    description: `Managed the club’s annual budget.
-    Allocated financial resources for the club’s activities and negotiated with sponsors to raise funds.
-    Held music festivals.
-    Edited articles for Arghanoun magazine of music club.`,
+    description: `Managed the club’s annual budget. Allocated financial resources for the club’s activities and negotiated with sponsors to raise funds. Held music festivals. Edited articles for Arghanoun magazine of music club`,
   },
   {
     role: "President",
@@ -53,11 +49,7 @@ const experiencesList = [
     logo: MusicClubLogo,
     url: "https://www.instagram.com/ferdowsi_music_club/",
     duration: "Oct 2021 - Oct 2022",
-    description: `Arranged weekly team sessions, assigned tasks, and monitored progress.
-    Negotiated with music teachers and held 21 music workshops.
-    Successfully coordinated communications between the music club team (6 members) and other clubs and university associations to perform programs.
-    Trained more than 30 enthusiastic members of the music club and assigned tasks.
-    Edited articles for Arghanoun magazine of music club.`,
+    description: `Arranged weekly team sessions, assigned tasks, and monitored progress. Negotiated with music teachers and held 21 music workshops. Successfully coordinated communications between the music club team (6 members) and other clubs and university associations to perform programs. Trained more than 30 enthusiastic members of the music club and assigned tasks. Edited articles for Arghanoun magazine of music club`,
   },
   {
     role: "Board Member",
@@ -65,16 +57,16 @@ const experiencesList = [
     logo: MusicClubLogo,
     url: "https://www.instagram.com/ferdowsi_music_club/",
     duration: "Aug 2020 - Sep 2021",
-    description: `Researched and chose appropriate topics for weekly research music discussion meetings.
-    Selected and invited professional Iranian musicians to meetings.
-    Conducted and performed discussions on Instagram Lives with more than 800 audiences per session.`,
+    description: `Researched and chose appropriate topics for weekly research music discussion meetings. Selected and invited professional Iranian musicians to meetings. Conducted and performed discussions on Instagram Lives with more than 800 audiences per session`,
   },
 ];
 
 export function ExperiencesList() {
   return (
     <div id="experiences-section">
-      <h1 className="title">Experiences</h1>
+      <h1 className="title" id="section-title">
+        Experiences
+      </h1>
       {/* Three first single experiences */}
       {experiencesList.slice(0, 3).map((exp, index) => (
         <SingleExperience

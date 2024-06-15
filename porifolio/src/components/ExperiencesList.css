@@ -1,3 +1,9 @@
 #experiences-section {
   scroll-margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#section-title {
+  align-self: center;
 }
