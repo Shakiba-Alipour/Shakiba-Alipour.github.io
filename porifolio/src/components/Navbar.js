@@ -4,30 +4,38 @@ import { MenuOutlined } from "@ant-design/icons";
 import "./Navbar.css";
 import { Button } from "antd";
 
+const handleScroll = (event, id) => {
+  event.preventDefault();
+  const element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};
+
 const NavbarItems = [
   {
     key: "about",
     label: (
       <Link
-        to={"about"}
+        to={"#about-section"}
         className="nav-links"
         smooth={true}
-        duration={400}
+        duration={500}
         rel="noopener noreferrer"
+        onClick={(e) => handleScroll(e, "about-section")}
       >
         About
       </Link>
     ),
   },
   {
-    key: "experiences",
+    key: "/#experiences",
     label: (
       <Link
-        to={"experiences"}
+        to={"#experiences-section"}
         className="nav-links"
         smooth={true}
-        duration={400}
+        duration={500}
         rel="noopener noreferrer"
+        onClick={(e) => handleScroll(e, "experiences-section")}
       >
         Experiences
       </Link>
@@ -37,11 +45,12 @@ const NavbarItems = [
     key: "awards",
     label: (
       <Link
-        to={"awards"}
+        to={"#awards-section"}
         className="nav-links"
         smooth={true}
-        duration={400}
+        duration={500}
         rel="noopener noreferrer"
+        onClick={(e) => handleScroll(e, "awards-section")}
       >
         Awards
       </Link>
@@ -51,11 +60,12 @@ const NavbarItems = [
     key: "contact",
     label: (
       <Link
-        to={"contact"}
+        to={"#footer-section"}
         className="nav-links"
         smooth={true}
-        duration={400}
+        duration={500}
         rel="noopener noreferrer"
+        onClick={(e) => handleScroll(e, "footer-section")}
       >
         Contact
       </Link>

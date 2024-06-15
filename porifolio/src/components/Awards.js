@@ -83,7 +83,7 @@ const awards = [
 
 export function Awards() {
   return (
-    <div className="awards_section">
+    <div className="awards_section" id="awards-section">
       <h1 className="section_title">Awards</h1>
 
       <Timeline mode="alternate" className="timeline">

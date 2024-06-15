@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export function Footer() {
   return (
-    <Footer className="footer">
+    <Footer className="footer" id="footer-section">
       <div id="footer_container">
         <div id="logo_container">
           <a

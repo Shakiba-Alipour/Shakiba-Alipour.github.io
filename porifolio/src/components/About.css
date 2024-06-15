@@ -6,6 +6,10 @@
   margin-bottom: 8%;
 }
 
+#about-section {
+  scroll-margin-top: 5rem;
+}
+
 .about-item {
   max-width: 45%;
 }
