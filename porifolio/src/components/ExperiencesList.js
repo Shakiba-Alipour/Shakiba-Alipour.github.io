@@ -1,6 +1,5 @@
 import { SingleExperience } from "./SingleExperience";
 import { SeriesOfExperiences } from "./SeriesOfExperiences";
-import { Timeline } from "antd";
 import "./ExperiencesList.css";
 
 // import logos
@@ -79,25 +78,9 @@ export function ExperiencesList() {
           description={exp.description}
         />
       ))}
+
       {/* Three last series of experiences */}
-      {/* <Timeline>
-        {experiencesList
-          .slice(-3)
-          .reverse()
-          .map((exp, index) => (
-            <Timeline.Item key={index}>
-              <SeriesOfExperiences
-                index={index}
-                role={exp.role}
-                company={exp.company}
-                logo={exp.logo}
-                url={exp.url}
-                duration={exp.duration}
-                description={exp.description}
-              />
-            </Timeline.Item>
-          ))}
-      </Timeline> */}
+      <SeriesOfExperiences experiences={experiencesList.slice(-3).reverse()} />
     </div>
   );
 }
