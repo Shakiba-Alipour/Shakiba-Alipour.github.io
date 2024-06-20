@@ -17,10 +17,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.company-logo {
-  width: 10rem;
-}
-
 #company-info {
   display: flex;
   flex-direction: row;
@@ -44,12 +40,6 @@
   margin-left: 5%;
 }
 
-#experience-main-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .experience-duration {
   height: fit-content;
   display: inherit;
@@ -64,6 +54,47 @@
   font-size: small;
 }
 
-.role {
-  text-align: left;
+@media screen and (max-width: 480px) {
+  .experience {
+    flex-direction: column;
+  }
+
+  .role {
+    text-align: center;
+  }
+
+  #experience-main-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .company-name {
+    text-align: center;
+  }
+
+  #company-info {
+    flex-direction: column;
+    align-content: center;
+    display: contents;
+  }
+
+  .company-logo {
+    width: 5rem;
+  }
+}
+
+@media screen and (min-width: 780) {
+  #experience-main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .company-logo {
+    width: 8rem;
+  }
+
+  .role {
+    text-align: left;
+  }
 }

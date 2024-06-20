@@ -31,10 +31,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.company-logo {
-  width: 8rem;
-}
-
 #company-info {
   display: flex;
   flex-direction: row;
@@ -79,6 +75,44 @@
   text-align: left;
 }
 
-.role {
-  text-align: left;
+@media screen and (max-width: 480px) {
+  .experience {
+    flex-direction: column;
+  }
+
+  #company-name {
+    text-align: center;
+  }
+
+  .role {
+    text-align: center;
+  }
+
+  #experience-main-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #company-info {
+    flex-direction: column;
+    align-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 780) {
+  #experience-main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .company-logo {
+    width: 8rem;
+  }
+
+  .role {
+    text-align: left;
+  }
 }
