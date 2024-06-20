@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Tag, Card, Badge, Timeline } from "antd";
 import { TrophyFilled } from "@ant-design/icons";
 import "./Awards.css";
@@ -63,7 +63,6 @@ const awards = [
     place: "Ferdowsi University of Mashhad",
     rank: 1,
   },
-  ,
   {
     year: "2021",
     competition: "The 9th National Rouyesh Festival",
@@ -82,11 +81,30 @@ const awards = [
 ];
 
 export function Awards() {
+  const [mode, setMode] = useState("alternate");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 780) {
+        setMode("left");
+      } else {
+        setMode("alternate");
+      }
+    };
+
+    handleResize(); // Set initial mode
+    window.addEventListener("resize", handleResize); // Update mode on resize
+
+    return () => {
+      window.removeEventListener("resize", handleResize); // Cleanup listener
+    };
+  }, []);
+
   return (
     <div className="awards_section" id="awards-section">
       <h1 className="section_title">Awards</h1>
 
-      <Timeline mode="alternate" className="timeline">
+      <Timeline mode={mode} className="timeline">
         {awards.map((item, index) => (
           <Timeline.Item
             key={index}
