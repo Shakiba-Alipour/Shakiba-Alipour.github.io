@@ -31,12 +31,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#company-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .company-website {
   font-size: large;
   color: #575866;
@@ -78,6 +72,12 @@
 @media screen and (max-width: 480px) {
   .experience {
     flex-direction: column;
+    padding-right: 6%;
+  }
+
+  .company-logo {
+    width: 5rem;
+    align-self: center;
   }
 
   #company-name {
@@ -97,11 +97,17 @@
     flex-direction: column;
     align-content: center;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
-@media screen and (min-width: 780) {
+@media screen and (min-width: 780px) {
+  #experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #experience-main-info {
     display: flex;
     flex-direction: row;
@@ -110,6 +116,12 @@
 
   .company-logo {
     width: 8rem;
+  }
+
+  #company-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
   .role {

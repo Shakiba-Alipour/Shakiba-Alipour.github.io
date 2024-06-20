@@ -1,7 +1,4 @@
 .experience {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   width: 80%;
   margin-top: 3%;
   border-style: solid;
@@ -15,11 +12,6 @@
 
 .experience:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#company-info {
-  display: flex;
-  flex-direction: row;
 }
 
 .company-website {
@@ -83,11 +75,22 @@
   }
 }
 
-@media screen and (min-width: 780) {
+@media screen and (min-width: 780px) {
+  .experience {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   #experience-main-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  #company-info {
+    display: flex;
+    flex-direction: row;
   }
 
   .company-logo {
