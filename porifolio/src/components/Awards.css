@@ -1,9 +1,10 @@
 .awards_section {
   margin-bottom: 5%;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  align-self: center;
   justify-content: center;
   flex-direction: column;
   scroll-margin-top: 5rem;
