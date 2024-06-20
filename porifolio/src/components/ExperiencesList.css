@@ -2,6 +2,7 @@
   scroll-margin-top: 5rem;
   display: flex;
   flex-direction: column;
+  width: 75%;
 }
 
 #section-title {
