@@ -13,10 +13,6 @@
   justify-content: space-around;
 }
 
-.about-item {
-  max-width: 45%;
-}
-
 .title {
   display: flex;
   justify-self: left;
@@ -67,4 +63,38 @@
 
 .skills h2 {
   max-width: fit-content;
+}
+
+@media screen and (max-width: 480px) {
+  #about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-item {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-item p {
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .about-item {
+    max-width: 45%;
+  }
 }
