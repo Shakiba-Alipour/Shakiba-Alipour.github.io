@@ -45,12 +45,14 @@
   font-size: large;
   color: #575866;
   margin-left: 2%;
+  margin-right: 2%;
 }
 
 #company-name {
   color: #575866;
   width: fit-content;
   margin-left: 2%;
+  text-align: left;
 }
 
 .experience-info {
@@ -74,5 +76,9 @@
 }
 
 .experience-description {
+  text-align: left;
+}
+
+.role {
   text-align: left;
 }
