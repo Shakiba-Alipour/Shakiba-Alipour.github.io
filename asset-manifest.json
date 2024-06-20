@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.cccaf8d4.css",
-    "main.js": "/static/js/main.1d032f9b.js",
+    "main.css": "/static/css/main.0cd92f75.css",
+    "main.js": "/static/js/main.329eeac3.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/shora_kanoon.png": "/static/media/shora_kanoon.aad487b746fed146eba3.png",
     "static/media/Music_Club.jpg": "/static/media/Music_Club.97c84af3f61703434156.jpg",
     "index.html": "/index.html",
-    "main.cccaf8d4.css.map": "/static/css/main.cccaf8d4.css.map",
-    "main.1d032f9b.js.map": "/static/js/main.1d032f9b.js.map",
+    "main.0cd92f75.css.map": "/static/css/main.0cd92f75.css.map",
+    "main.329eeac3.js.map": "/static/js/main.329eeac3.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cccaf8d4.css",
-    "static/js/main.1d032f9b.js"
+    "static/css/main.0cd92f75.css",
+    "static/js/main.329eeac3.js"
   ]
 }
