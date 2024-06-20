@@ -6,8 +6,10 @@
   align-items: center;
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100% !important;
   z-index: 10;
-  width: 100%;
 }
 
 .navbar-container {
@@ -62,4 +64,45 @@
 
 #menu-icon {
   color: #fff;
+  background-color: inherit;
+  border-color: inherit;
+  position: fixed;
+  right: 3%;
+}
+
+/* Overlay settings */
+.overlay {
+  position: relative;
+  top: 8rem;
+  right: 0.1rem;
+  width: fit-content;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.overlay-nav-item {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.overlay-nav-item .nav-links {
+  color: #fff;
+  font-size: medium;
+  cursor: pointer;
 }
