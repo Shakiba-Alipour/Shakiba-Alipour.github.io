@@ -38,6 +38,7 @@
   display: flex;
   list-style: none;
   text-align: center;
+  padding: 0;
 }
 
 .nav-item {
@@ -45,7 +46,7 @@
   font-size: large;
 }
 
-.nav-links {
+.nav-link {
   color: #fff;
   display: flex;
   align-items: center;
@@ -57,7 +58,7 @@
   cursor: pointer;
 }
 
-.nav-links:hover {
+.nav-link:hover {
   background-color: #575757;
   border-radius: 4px;
 }
@@ -99,10 +100,11 @@
 .overlay-nav-item {
   margin: 0.5rem 0;
   text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 
-.overlay-nav-item .nav-links {
-  color: #fff;
-  font-size: medium;
-  cursor: pointer;
+.overlay-nav-item:hover {
+  background-color: #575757;
+  border-radius: 4px;
 }

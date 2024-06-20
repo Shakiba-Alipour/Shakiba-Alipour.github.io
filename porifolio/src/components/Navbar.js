@@ -1,80 +1,33 @@
-import { Link } from "react-scroll";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import { MenuOutlined } from "@ant-design/icons";
-import "./Navbar.css";
 import { Button } from "antd";
-
-const handleScroll = (event, id) => {
-  event.preventDefault();
-  const element = document.getElementById(id);
-  element.scrollIntoView({ behavior: "smooth" });
-};
+import "./Navbar.css";
 
 const NavbarItems = [
   {
     key: "about",
-    label: (
-      <Link
-        to={"#about-section"}
-        className="nav-links"
-        smooth={true}
-        duration={500}
-        rel="noopener noreferrer"
-        onClick={(e) => handleScroll(e, "about-section")}
-      >
-        About
-      </Link>
-    ),
+    label: "About",
+    to: "about-section",
   },
   {
-    key: "/#experiences",
-    label: (
-      <Link
-        to={"#experiences-section"}
-        className="nav-links"
-        smooth={true}
-        duration={500}
-        rel="noopener noreferrer"
-        onClick={(e) => handleScroll(e, "experiences-section")}
-      >
-        Experiences
-      </Link>
-    ),
+    key: "experiences",
+    label: "Experiences",
+    to: "experiences-section",
   },
   {
     key: "awards",
-    label: (
-      <Link
-        to={"#awards-section"}
-        className="nav-links"
-        smooth={true}
-        duration={500}
-        rel="noopener noreferrer"
-        onClick={(e) => handleScroll(e, "awards-section")}
-      >
-        Awards
-      </Link>
-    ),
+    label: "Awards",
+    to: "awards-section",
   },
   {
     key: "contact",
-    label: (
-      <Link
-        to={"#footer-section"}
-        className="nav-links"
-        smooth={true}
-        duration={500}
-        rel="noopener noreferrer"
-        onClick={(e) => handleScroll(e, "footer-section")}
-      >
-        Contact
-      </Link>
-    ),
+    label: "Contact",
+    to: "footer-section",
   },
 ];
 
 export function Navbar() {
-  // Consider different navbar for mobile phones
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 780);
 
   useEffect(() => {
@@ -97,8 +50,12 @@ function MobileNavbarManagement() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(false); // Close the menu when an item is clicked
+  const handleItemClick = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -113,13 +70,13 @@ function MobileNavbarManagement() {
         onClick={toggleMenu}
       />
       {isMenuOpen && (
-        <div className={`overlay ${isMenuOpen ? "active" : ""}`}>
+        <div className="overlay">
           <div className="overlay-content">
             {NavbarItems.map((item) => (
               <div
                 key={item.key}
                 className="overlay-nav-item"
-                onClick={handleMenuClick}
+                onClick={() => handleItemClick(item.to)}
               >
                 {item.label}
               </div>
@@ -132,19 +89,28 @@ function MobileNavbarManagement() {
 }
 
 function DesktopNavbarManagement() {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="navbar-container" id="header">
       <Link to={"/"} className="nav-item" id="website-name">
         Shakiba Alipour
       </Link>
       <ul className="nav-menu">
-        {NavbarItems.map(function (item) {
-          return (
-            <li className="nav-item" key={item.key}>
-              {item.label}
-            </li>
-          );
-        })}
+        {NavbarItems.map((item) => (
+          <li
+            className="nav-link"
+            key={item.key}
+            onClick={() => handleScroll(item.to)}
+          >
+            {item.label}
+          </li>
+        ))}
       </ul>
     </header>
   );
