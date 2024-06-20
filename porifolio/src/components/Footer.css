@@ -19,6 +19,14 @@
   padding-right: 3%;
 }
 
+/* Responsive footer */
+@media screen and (max-width: 480px) {
+  #footer_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #copy-right {
   color: #fff;
   width: fit-content;
