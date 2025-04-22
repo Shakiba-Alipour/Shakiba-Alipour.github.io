@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <AntFooter
       id="footer-section"
-      className=" absolute p-4 w-full bottom-0 bg-dark-gray text-white"
+      className="py-5 px-20 w-full bottom-0 bg-dark-gray text-white"
     >
       <div className="flex flex-row max-sm:flex-col justify-between items-center">
         <div>
