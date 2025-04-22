@@ -26,13 +26,14 @@ const Awards = () => {
   return (
     <Timeline
       mode={mode === "alternate" ? "alternate" : "left"}
-      className="w-full max-md:w-3/4 self-center items-center justify-self-center"
+      className="w-full mt-5 max-md:w-3/4 self-center items-center justify-self-center"
     >
       {awards.map((item, index) => (
         <Timeline.Item
           key={index}
           dot={<TrophyFilled />}
           color={item.rank === 1 ? "gold" : "silver"}
+          className="w-full"
         >
           <Badge.Ribbon
             text={item.rank === 1 ? "1st Rank" : "2nd Rank"}
@@ -40,13 +41,15 @@ const Awards = () => {
           >
             <Card
               title={
-                <div className="whitespace-normal break-words text-left">
+                <div className="whitespace-normal break-words text-left w-5/6">
                   {item.award}
                 </div>
               }
-              className="w-full"
+              className="w-full text-left"
             >
-              <Tag color="blue">{item.year}</Tag>
+              <Tag color="blue" className="mb-3">
+                {item.year}
+              </Tag>
               <p>{item.competition}</p>
               <p>{item.place}</p>
             </Card>
