@@ -1,5 +1,5 @@
-import SingleExperience from "./SingleExperience";
-import SeriesOfExperiences from "./SeriesOfExperiences";
+import SingleExperience from "./components/SingleExperience";
+import SeriesOfExperiences from "./components/SeriesOfExperiences";
 import { experiences } from "./data/experiences";
 
 const ExperiencesList = () => {
