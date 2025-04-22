@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="w-full h-full">
       <Navbar />
-      <main>
+      <main className="w-full">
         <Home />
       </main>
       <Footer />
