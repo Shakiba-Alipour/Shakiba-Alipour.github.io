@@ -11,7 +11,7 @@ const Footer = () => {
       id="footer-section"
       className=" absolute p-4 w-full bottom-0 bg-dark-gray text-white"
     >
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row sm:flex-col max-sm:flex-col justify-between items-center">
         <div>
           <a
             id="linkedin"
@@ -43,7 +43,9 @@ const Footer = () => {
             <MailFilled />
           </a>
         </div>
-        <p>@ 2025 Shakiba Alipour. All rights reserved.</p>
+        <p className="sm:mt-5  max-sm:mt-5">
+          @ 2025 Shakiba Alipour. All rights reserved.
+        </p>
       </div>
     </AntFooter>
   );
