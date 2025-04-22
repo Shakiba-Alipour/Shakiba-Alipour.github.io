@@ -3,7 +3,10 @@ import { projects } from "./data/projects";
 
 const Projects = () => {
   return (
-    <div className="w-full grid grid-cols-2 gap-x-10 mt-10">
+    <div
+      className="w-full flex flex-row flex-wrap gap-x-20 mt-10 place-content-center
+    "
+    >
       {projects.map((project) => (
         <Project
           title={project.title}
