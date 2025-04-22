@@ -8,7 +8,7 @@ export const projects = [
     websiteLink: "https://foroush-yar.ir",
     image: Foroushyar,
     description: "",
-    tech: ["React", "TypeScript", "Tailwind", "Zustand"],
+    tech: ["React", "TypeScript", "TailwindCSS", "Zustand"],
   },
   {
     title: "Hasht Educational Group",

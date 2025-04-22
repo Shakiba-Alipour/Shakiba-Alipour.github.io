@@ -12,7 +12,7 @@ const ProgrammingSkills = ({
     "C",
     "HTML",
     "CSS",
-    "Tailwind",
+    "Tailwind CSS",
     "JavaScript",
     "TypeScript",
     "Node.js",
