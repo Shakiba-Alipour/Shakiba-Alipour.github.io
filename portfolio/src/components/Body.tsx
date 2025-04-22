@@ -1,6 +1,7 @@
-import { Tabs } from "antd";
-import About from "./About/About";
+import { ConfigProvider, Tabs } from "antd";
+import About from "./about/About";
 import { useEffect, useState } from "react";
+import ExperiencesList from "./experiences/ExperiencesList";
 
 const Body = () => {
   const [tabGutter, setTabGutter] = useState(300);
@@ -8,7 +9,7 @@ const Body = () => {
   const tabs = [
     { label: "About", children: <About /> },
     { label: "Projects", children: "Content of Tab Pane" },
-    { label: "Experiences", children: "Content of Tab Pane" },
+    { label: "Experiences", children: <ExperiencesList /> },
     { label: "Awards", children: "Content of Tab Pane" },
   ];
 
@@ -17,9 +18,9 @@ const Body = () => {
       if (window.innerWidth < 500) {
         setTabGutter(10);
       } else if (window.innerWidth < 680) {
-        setTabGutter(100);
+        setTabGutter(80);
       } else if (window.innerWidth < 1000) {
-        setTabGutter(150);
+        setTabGutter(100);
       } else if (window.innerWidth < 1400) {
         setTabGutter(200);
       } else {
@@ -34,16 +35,33 @@ const Body = () => {
   }, []);
 
   return (
-    <Tabs
-      type="line"
-      centered
-      tabBarStyle={{ fontSize: 2, fontWeight: "bold" }}
-      tabBarGutter={tabGutter}
-      className="w-5/6 my-20 items-center self-center justify-self-center"
-      items={tabs.map((item) => {
-        return { label: item.label, key: item.label, children: item.children };
-      })}
-    />
+    <ConfigProvider
+      theme={{
+        components: {
+          Tabs: {
+            inkBarColor: "red",
+            itemActiveColor: "red",
+            itemHoverColor: "light red",
+            itemSelectedColor: "red",
+            titleFontSize: 20,
+          },
+        },
+      }}
+    >
+      <Tabs
+        type="line"
+        centered
+        tabBarGutter={tabGutter}
+        className="w-5/6 my-20 items-center self-center justify-self-center"
+        items={tabs.map((item) => {
+          return {
+            label: item.label,
+            key: item.label,
+            children: item.children,
+          };
+        })}
+      />
+    </ConfigProvider>
   );
 };
 
