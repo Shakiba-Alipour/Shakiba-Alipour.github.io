@@ -2,6 +2,7 @@ import { ConfigProvider, Tabs } from "antd";
 import About from "./about/About";
 import { useEffect, useState } from "react";
 import ExperiencesList from "./experiences/ExperiencesList";
+import Awards from "./awards/Awards";
 
 const Body = () => {
   const [tabGutter, setTabGutter] = useState(300);
@@ -10,7 +11,7 @@ const Body = () => {
     { label: "About", children: <About /> },
     { label: "Projects", children: "Content of Tab Pane" },
     { label: "Experiences", children: <ExperiencesList /> },
-    { label: "Awards", children: "Content of Tab Pane" },
+    { label: "Awards", children: <Awards /> },
   ];
 
   useEffect(() => {
@@ -43,7 +44,7 @@ const Body = () => {
             itemActiveColor: "red",
             itemHoverColor: "light red",
             itemSelectedColor: "red",
-            titleFontSize: 20,
+            titleFontSize: 18,
           },
         },
       }}
