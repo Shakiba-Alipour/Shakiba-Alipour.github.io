@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div
       id="home-section"
-      className="w-full items-center content-center flex justify-center py-8"
+      className="w-full items-center content-center flex justify-center pb-8 pt-20"
     >
       <div className="text-center flex flex-col justify-center my-8">
         <h1 className="text-2xl font-bold">Hi there!</h1>
