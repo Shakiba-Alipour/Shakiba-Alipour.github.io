@@ -1,17 +1,8 @@
-import { useEffect, useState } from "react";
 import { GithubFilled, LinkedinFilled, MailFilled } from "@ant-design/icons";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
   const logoClassName = "text-2xl mx-2 cursor-pointer hover:text-gray-300";
-
-  useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 780);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <nav className="w-full bg-dark-gray text-white text-lg fixed z-50 h-16 flex items-center justify-between px-40 max-sm:px-5">
