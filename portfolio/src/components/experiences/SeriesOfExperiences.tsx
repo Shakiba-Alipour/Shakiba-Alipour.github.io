@@ -21,14 +21,19 @@ const SeriesOfExperiences = ({
 
   return (
     <div className={`${containerStyle} flex-col`}>
-      <div className="flex flex-row max-sm:flex-col text-gray-600">
+      <div className="flex flex-row max-sm:flex-col text-gray-600 items-center">
         <img
           src={firstExperience.logo}
-          className="w-28"
+          className="w-28 mr-10"
           alt={`${firstExperience.company} logo`}
         />
-        <b className="mr-2">{firstExperience.company}</b>
-        <a href={firstExperience.url} target="_blank" rel="noopener noreferrer">
+        <a
+          href={firstExperience.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-red-500"
+        >
+          <b className="mr-2">{firstExperience.company}</b>
           <LinkOutlined />
         </a>
       </div>

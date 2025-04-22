@@ -27,10 +27,15 @@ const SingleExperience = ({
     <div className={containerStyle}>
       <img src={logo} className="w-28" alt={`${company} logo`} />
       <div className="w-full mx-10">
-        <div className="text-gray-600">
-          <b className="mr-2">{company}</b>
+        <div>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 hover:text-red-500"
+          >
+            <b className="mr-2">{company}</b>
 
-          <a href={url} target="_blank" rel="noopener noreferrer">
             <LinkOutlined />
           </a>
         </div>

@@ -4,7 +4,7 @@ import { experiences } from "./data/experiences";
 
 const ExperiencesList = () => {
   const containerSyle =
-    "flex flex-row max-sm:flex-col w-full border-gray-200 rounded-lg border-2 p-10 my-5 hover:shadow-lg";
+    "flex flex-row max-sm:flex-col w-full border-gray-200 rounded-lg border-2 p-10 my-5 hover:shadow-xl  transition-shadow duration-300";
   return (
     <div id="experiences-section">
       <SeriesOfExperiences
