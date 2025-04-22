@@ -21,7 +21,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <Card
-      className="my-5"
+      className="my-5 max-w-xl"
       cover={<img src={image} alt={title} className="w-10 max-h-60" />}
       actions={[
         <a
@@ -44,7 +44,12 @@ const Project: React.FC<ProjectProps> = ({
         </a>,
       ]}
     >
-      <Meta title={title} description={description} />
+      <Meta
+        title={title}
+        description={
+          <p className="whitespace-normal break-words">{description}</p>
+        }
+      />
       <ul className="flex flex-row flex-wrap">
         {tech.map((t) => (
           <li className="mt-4 mx-4 px-4 py-2 bg-gray-200 rounded-md bg-opacity-100">
