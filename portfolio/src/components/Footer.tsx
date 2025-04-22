@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <AntFooter
       id="footer-section"
-      className="py-5 px-20 w-full bottom-0 bg-dark-gray text-white"
+      className="py-5 px-20 w-full bottom-0 bg-dark-gray text-white items-center justify-items-center"
     >
-      <div className="flex flex-row max-sm:flex-col justify-between items-center">
-        <div>
+      {/* <div className="flex flex-row max-sm:flex-col justify-between items-center"> */}
+      {/* <div>
           <a
             id="linkedin"
             href="https://www.linkedin.com/in/shakiba-alipour"
@@ -42,11 +42,11 @@ const Footer = () => {
           >
             <MailFilled />
           </a>
-        </div>
-        <p className="mt-0 max-sm:mt-5">
-          @ 2025 Shakiba Alipour. All rights reserved.
-        </p>
-      </div>
+        </div> */}
+      <p className="w-fit mt-0 max-sm:mt-5">
+        @ 2025 Shakiba Alipour. All rights reserved.
+      </p>
+      {/* </div> */}
     </AntFooter>
   );
 };
