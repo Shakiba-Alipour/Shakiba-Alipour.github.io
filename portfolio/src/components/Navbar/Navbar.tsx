@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full bg-dark-gray text-white text-lg sticky z-50">
+    <nav className="w-full bg-dark-gray text-white text-lg fixed z-50 h-16 flex items-center">
       {isMobile ? (
         <MobileNavbar
           isMenuOpen={isMenuOpen}
