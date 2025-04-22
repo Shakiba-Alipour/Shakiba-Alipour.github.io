@@ -3,13 +3,14 @@ import About from "./about/About";
 import { useEffect, useState } from "react";
 import ExperiencesList from "./experiences/ExperiencesList";
 import Awards from "./awards/Awards";
+import Projects from "./projects/Projects";
 
 const Body = () => {
   const [tabGutter, setTabGutter] = useState(300);
 
   const tabs = [
     { label: "About", children: <About /> },
-    { label: "Projects", children: "Content of Tab Pane" },
+    { label: "Projects", children: <Projects /> },
     { label: "Experiences", children: <ExperiencesList /> },
     { label: "Awards", children: <Awards /> },
   ];
