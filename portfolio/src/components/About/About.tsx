@@ -3,7 +3,8 @@ import ProgrammingSkills from "./ProgrammingSkills";
 import SoftSkills from "./SoftSkills";
 
 const About = () => {
-  const itemStyle = "py-2 px-4 min-h-8 m-2 bg-gray-300 w-fit rounded-lg";
+  const itemStyle =
+    "py-2 px-4 min-h-8 m-2 bg-gray-300 w-fit rounded-lg bg-opacity-100";
   const titleStyle = "text-xl font-bold";
   return (
     <div
