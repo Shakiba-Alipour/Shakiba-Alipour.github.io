@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Source+Sans+3:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* TYPOGRAPHY */
+  --font-display: "Raleway", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+
+  /* 
+    COLOR PALETTE — Professional Blue/Grey
+    
+    Naming convention:
+    primary     = the main brand color (deep blue)
+    primary-*   = lighter/darker shades of primary
+    surface-*   = background layers (page, cards, elevated)
+    text-*      = text hierarchy
+    border-*    = dividers and outlines
+    accent      = a single pop color for CTAs and highlights
+  */
+
+  /* Primary — Deep Professional Blue */
+  --color-primary: #1e3a5f; /* darkest — used for strong headings */
+  --color-primary-700: #1e40af; /* main blue — buttons, active states */
+  --color-primary-600: #2563eb; /* hover blue */
+  --color-primary-400: #60a5fa; /* light blue — subtle highlights */
+  --color-primary-100: #dbeafe; /* very light blue — badge backgrounds */
+
+  /* Surfaces — Light Grey Hierarchy */
+  --color-surface: #ffffff; /* page background */
+  --color-surface-50: #f8fafc; /* subtle section backgrounds */
+  --color-surface-100: #f1f5f9; /* card backgrounds */
+  --color-surface-200: #e2e8f0; /* elevated card / hover states */
+
+  /* Text Hierarchy */
+  --color-text-primary: #0f172a; /* headings — near black */
+  --color-text-secondary: #334155; /* body text — dark slate */
+  --color-text-muted: #64748b; /* captions, metadata — medium grey */
+  --color-text-subtle: #94a3b8; /* placeholders, disabled */
+
+  /* Borders */
+  --color-border: #e2e8f0; /* default dividers */
+  --color-border-strong: #cbd5e1; /* stronger borders on hover */
+
+  /* Accent — used sparingly for CTAs and key highlights */
+  --color-accent: #0ea5e9; /* sky blue — energetic but professional */
+  --color-accent-hover: #0284c7; /* darker on hover */
+
+  /* Status colors — for skill level badges */
+  --color-level-pro: #166534; /* professional — dark green */
+  --color-level-pro-bg: #dcfce7; /* professional bg — light green */
+  --color-level-mid: #1e40af; /* intermediate — blue */
+  --color-level-mid-bg: #dbeafe; /* intermediate bg — light blue */
+  --color-level-acad: #6b21a8; /* academic — purple */
+  --color-level-acad-bg: #f3e8ff; /* academic bg — light purple */
+}
+
+/* ------------------------------------------------------------
+   GLOBAL BASE STYLES
+   These apply to the whole page without needing any class.
+------------------------------------------------------------ */
+@layer base {
+  /* Smooth scrolling for anchor navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Default body styles */
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-text-secondary);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Heading defaults — display font, strong color */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    color: var(--color-text-primary);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* Links — no default underline, inherit color */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* Images — never overflow their container */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: var(--font-body);
+  }
+}
