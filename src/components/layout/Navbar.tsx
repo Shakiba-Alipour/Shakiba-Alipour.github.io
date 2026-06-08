@@ -9,6 +9,7 @@ Responsibilities:
 
 import { useState, useEffect, useCallback } from "react";
 import { navLinks, siteConfig } from "../../data/navigation";
+import Logo from "../../assets/Logo.svg";
 
 /* ------------------------------------------------------------
 Types
@@ -96,11 +97,13 @@ export default function Navbar({ activeSection }: NavbarProps) {
       <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* ---- Logo / Name ---- */}
         {/* Clicking the name scrolls back to the top of the page */}
+
         <a
           href="#hero"
-          className="font-display font-bold text-lg text-primary tracking-tight
+          className=" flex flex=row font-display font-bold text-lg text-primary tracking-tight
                      hover:text-primary-700 transition-colors duration-200"
         >
+          <img src={Logo} className="max-w-1/12 max-h-1/12 px-2"/>
           {siteConfig.name}
         </a>
 
