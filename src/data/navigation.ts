@@ -21,7 +21,8 @@ export const siteConfig = {
   name: "Shakiba Alipour",
   title: "Computer Engineer",
   subtitle: "Computer Engineer · Front-end Specialist · Tech Enthusiast",
-  tagline: "Self-taught. Production-proven. Leadership-driven.",
+  tagline:
+    "From self-taught curiosity to production code — I'm an engineer by degree, a developer by practice, and a leader by choice.",
   email: "",
   phone: "",
   location: "Mashhad, Iran",

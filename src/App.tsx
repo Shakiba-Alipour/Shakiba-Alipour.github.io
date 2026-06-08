@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/layout/Navbar";
 import { navLinks } from "./data/navigation";
+import Hero from "./components/sections/Hero";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -39,7 +40,7 @@ function App() {
           className="min-h-screen bg-surface-50 
           flex items-center justify-center"
         >
-          <h1 className="font-display text-primary text-4xl">Hero</h1>
+          <Hero />
         </section>
         <section
           id="about"
