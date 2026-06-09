@@ -1,37 +1,37 @@
 /* ============================================================
 Reusable section heading used by every section.
-Accepts a title, optional subtitle, and optional alignment.
+Accepts a tag, optional title, and optional alignment.
 ============================================================ */
 
-interface SectionTitleProps {
-  title: string;
-  subtitle?: string;
+interface SectiontagProps {
+  tag: string;
+  title?: string;
   align?: "left" | "center";
 }
 
-export default function SectionTitle({
+export default function Sectiontag({
+  tag,
   title,
-  subtitle,
   align = "left",
-}: SectionTitleProps) {
+}: SectiontagProps) {
   return (
-    <div className={`mb-12 ${align === "center" ? "text-center" : "text-left"}`}>
+    <div
+      className={`mb-12 ${align === "center" ? "text-center" : "text-left"}`}
+    >
+      <p
+        className="font-display font-semibold text-accent before:content-['']
+                         before:inline-block before:w-8 before:h-0.5 before:bg-accent before:mr-2 "
+      >
+        {tag}
+      </p>
 
-      {/* Accent line above the title */}
-      <div
-        className={`h-1 w-12 bg-accent rounded-full mb-4
-          ${align === "center" ? "mx-auto" : ""}`}
-      />
-
-      <h2 className="font-display font-bold text-3xl md:text-4xl text-primary">
-        {title}
-      </h2>
-
-      {subtitle && (
-        <p className="mt-3 text-text-muted text-lg max-w-2xl
-          ${align === 'center' ? 'mx-auto' : ''}">
-          {subtitle}
-        </p>
+      {title && (
+        <h2
+          className="mt-3 text-text-muted text-3xl max-w-2xl
+          ${align === 'center' ? 'mx-auto' : ''}"
+        >
+          {title}
+        </h2>
       )}
     </div>
   );
