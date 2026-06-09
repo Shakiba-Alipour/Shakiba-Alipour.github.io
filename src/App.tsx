@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/layout/Navbar";
 import { navLinks } from "./data/navigation";
 import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -47,7 +48,7 @@ function App() {
           className="min-h-screen bg-surface 
           flex items-center justify-center"
         >
-          <h1 className="font-display text-primary text-4xl">About</h1>
+          <About/>
         </section>
       </main>
     </>
