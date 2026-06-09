@@ -3,7 +3,7 @@
 // Education history and certificates.
 // ============================================================
 
-import { Education, Certificate } from "../types";
+import type { Education, Certificate } from "../types";
 
 export const educationHistory: Education[] = [
   {

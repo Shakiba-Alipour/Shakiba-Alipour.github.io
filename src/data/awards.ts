@@ -3,7 +3,7 @@
 // All competition awards and honors, ordered most recent first.
 // ============================================================
 
-import { Award } from "../types";
+import type { Award } from "../types";
 
 export const awards: Award[] = [
   {
