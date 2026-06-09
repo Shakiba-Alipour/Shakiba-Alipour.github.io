@@ -4,15 +4,15 @@
 // Leadership is folded in via leadershipNote where relevant.
 // Ordered most recent first.
 // ============================================================
-
-import { Experience } from "../types";
+// ============================================================
+import type { Experience } from "../types";
 
 export const experiences: Experience[] = [
   {
     id: "foroushyar",
     role: "Front-end Developer",
-    company: "Foroushyar — Atena Smart Data Processing Co.",
-    location: "Mashhad, Iran",
+    company: "Foroushyar — Atena Tech Smart Data Processing Co.",
+    location: "Mashhad, IRAN",
     duration: "Dec 2024 – Dec 2025",
     startDate: "2024-12",
     endDate: "2025-12",
@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
     id: "carsc-treasurer",
     role: "Treasurer",
     company: "CARSC — Cultural, Artistic, Religious & Social Clubs Council",
-    location: "Ferdowsi University of Mashhad, Iran",
+    location: "Ferdowsi University of Mashhad, IRAN",
     duration: "Dec 2022 – Dec 2023",
     startDate: "2022-12",
     endDate: "2023-12",
@@ -50,8 +50,8 @@ export const experiences: Experience[] = [
   {
     id: "mci-internship",
     role: "Software Engineer Intern",
-    company: "Hamrahe Aval (MCI — Mobile Telecommunications Company of Iran)",
-    location: "Mashhad, Iran",
+    company: "Hamrahe Aval (MCI — Mobile Telecommunications Company of IRAN)",
+    location: "Mashhad, IRAN",
     duration: "Jul 2022 – Sep 2022",
     startDate: "2022-07",
     endDate: "2022-09",
@@ -90,24 +90,25 @@ export const leadershipRoles: LeadershipRole[] = [
     startDate: "2021-10",
     endDate: "2022-10",
     highlights: [
-      "Led all operations for a 200-member club with 5,000+ Instagram followers",
-      "Organized music festivals attracting 700+ participants per major event",
-      "Mentored over 50 new members; coordinated a 5-person board",
-      "Secured sponsorships and managed club finances",
-      "Awarded Best Association President of the Year at the 13th University Festival",
-      "Club ranked 1st nationally at the 10th National Festival of University Associations",
+      "Arranged weekly team sessions, assigned tasks, and monitored progress",
+      "Negotiated with music teachers and held 21 music workshops",
+      "Coordinated communications between the music club team (6 members) and other clubs and university associations",
+      "Trained more than 30 new members and assigned tasks to grow the club",
+      "Edited articles for Arghanoon magazine of the music club",
     ],
   },
   {
     id: "music-club-treasurer",
-    role: "Treasurer — Music Student Association",
+    role: "Board Member & Treasurer — Music Student Association",
     organization: "Ferdowsi University of Mashhad",
     duration: "Nov 2022 – Sep 2023",
     startDate: "2022-11",
     endDate: "2023-09",
     highlights: [
-      "Managed club finances and spearheaded major music festival planning",
-      "Edited Arghanoon magazine — ranked 1st at the 22nd University Titr Festival (best artistic + best electronic magazine)",
+      "Managed the club's annual budget and allocated financial resources for activities",
+      "Negotiated with sponsors to raise funds for club events",
+      "Planned and held music festivals",
+      "Edited articles for Arghanoon magazine of the music club",
     ],
   },
   {
@@ -118,8 +119,9 @@ export const leadershipRoles: LeadershipRole[] = [
     startDate: "2020-08",
     endDate: "2021-09",
     highlights: [
-      "Led the weekly music meetings committee; 800+ collective attendees",
-      "Invited renowned musicians and guest speakers to club sessions",
+      "Researched and chose appropriate topics for weekly music discussion meetings",
+      "Selected and invited professional Iranian musicians as guest speakers",
+      "Conducted Instagram Live discussions with more than 800 viewers per session",
     ],
   },
 ];
