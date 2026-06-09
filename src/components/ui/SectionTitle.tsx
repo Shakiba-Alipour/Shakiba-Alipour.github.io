@@ -19,7 +19,7 @@ export default function Sectiontag({
       className={`mb-12 ${align === "center" ? "text-center" : "text-left"}`}
     >
       <p
-        className="font-display font-semibold text-accent before:content-['']
+        className="font-display font-semibold uppercase text-accent before:content-['']
                          before:inline-block before:w-8 before:h-0.5 before:bg-accent before:mr-2 "
       >
         {tag}

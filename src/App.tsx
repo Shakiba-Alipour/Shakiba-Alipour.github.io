@@ -3,6 +3,7 @@ import Navbar from "./components/layout/Navbar";
 import { navLinks } from "./data/navigation";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
+import Experience from "./components/sections/Experience";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -48,7 +49,14 @@ function App() {
           className="min-h-screen bg-surface 
           flex items-center justify-center"
         >
-          <About/>
+          <About />
+        </section>
+        <section
+          id="experiences"
+          className="min-h-screen bg-surface 
+          flex items-center justify-center"
+        >
+          <Experience />
         </section>
       </main>
     </>

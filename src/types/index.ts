@@ -52,6 +52,8 @@ export interface Experience {
   company: string;
   location: string;
   duration: string;
+  logo: string;
+  url?:string;
   startDate: string; // ISO format for sorting, e.g. "2024-12"
   endDate: string; // "present" or ISO format
   type: ExperienceType;
@@ -97,6 +99,8 @@ export interface Education {
     description: string;
   };
   notableCourses?: string[];
+  logo: string;
+  url?:string;
 }
 
 // ------------------------------------------------------------
