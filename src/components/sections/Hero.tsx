@@ -85,20 +85,19 @@ export default function Hero() {
               <a
                 href="#projects"
                 className="px-8 py-3 bg-primary-700 text-white font-medium
-                           rounded-lg hover:bg-primary-600 transition-colors
+                           rounded-full hover:bg-primary-600 transition-colors
                            duration-200 text-center shadow-sm"
               >
-                View My Work
+                View My Work →
               </a>
 
               {/* Secondary CTA — Download CV */}
-              {/* Outlined button, opens PDF in new tab */}
               <a
                 href={siteConfig.cvPath}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-primary-700 text-primary-700
-                           font-medium rounded-lg hover:bg-primary-100
+                           font-medium rounded-full hover:bg-primary-100
                            transition-colors duration-200 text-center"
               >
                 Download CV
@@ -108,7 +107,7 @@ export default function Hero() {
             {/* Social Links Row */}
             <div
               className="animate-fade-up delay-500 flex items-center gap-6
-                            justify-center md:justify-start mt-8"
+                            justify-center md:justify-start mt-8 mx-14"
             >
               <a
                 href={siteConfig.linkedin}
