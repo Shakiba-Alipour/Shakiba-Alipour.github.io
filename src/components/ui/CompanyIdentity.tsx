@@ -12,13 +12,12 @@ export default function CompanyIdentity({
   url,
 }: CompanyIdentityProps) {
   return (
-    <div className="flex flex-row items-center my-4">
-      <a
-        className="flex flex-row items-center cursor-pointer mt-0.5"
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-      ></a>
+    <a
+      className="flex flex-row items-center my-2 cursor-pointer"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         src={logo}
         alt={`${name} logo`}
@@ -31,6 +30,6 @@ export default function CompanyIdentity({
           {location}
         </span>
       </p>
-    </div>
+    </a>
   );
 }

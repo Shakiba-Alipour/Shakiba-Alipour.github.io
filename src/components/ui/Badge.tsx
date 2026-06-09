@@ -21,7 +21,7 @@ type Props = {
 export default function Badge({ type }: Props) {
   return (
     <span
-      className={`text-xs font-medium px-2.5 py-0.5 rounded-full ${badgeStyles[type]}`}
+      className={`text-xs font-medium px-2.5 py-1 rounded-full ${badgeStyles[type]}`}
     >
       {badgeLabels[type]}
     </span>
