@@ -84,8 +84,8 @@ export default function Hero() {
               {/* Solid blue button, scrolls to projects section */}
               <a
                 href="#projects"
-                className="px-8 py-3 bg-primary-700 text-white font-medium
-                           rounded-full hover:bg-primary-600 transition-colors
+                className="px-8 py-2 bg-primary-700 text-white font-medium
+                           rounded-lg hover:bg-primary-600 transition-colors
                            duration-200 text-center shadow-sm"
               >
                 View My Work →
@@ -96,8 +96,8 @@ export default function Hero() {
                 href={siteConfig.cvPath}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3 border-2 border-primary-700 text-primary-700
-                           font-medium rounded-full hover:bg-primary-100
+                className="px-8 py-2 border-2 border-primary-700 text-primary-700
+                           font-medium rounded-lg hover:bg-primary-100
                            transition-colors duration-200 text-center"
               >
                 Download CV
