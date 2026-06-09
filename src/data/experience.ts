@@ -4,7 +4,6 @@
 // Leadership is folded in via leadershipNote where relevant.
 // Ordered most recent first.
 // ============================================================
-// ============================================================
 import type { Experience } from "../types";
 import HamraheAvalLogo from "../assets/hamrahe_aval_logo.png";
 import MusicClubLogo from "../assets/Music_Club.jpg";
@@ -23,7 +22,7 @@ export const experiences: Experience[] = [
     type: "full-time",
     industry: "AI / Chatbot Services",
     bullets: [
-      "Led the complete redevelopment of the Foroushyar platform's front-end from scratch using React, TypeScript, Tailwind CSS, and Zustand",
+      "Led the complete redevelopment of the Foroushyar platform's front-end from scratch using React, TypeScript, Zustand, and Tailwind CSS",
       "Accurately translated detailed Figma designs into a fully responsive, user-friendly interface",
       "Collaborated with a cross-functional team to enhance user experience and implement new features",
     ],
@@ -72,7 +71,7 @@ export const experiences: Experience[] = [
 // and referenced in the Experience timeline via leadershipNote.
 // Full detail available here for any component that needs it.
 // ------------------------------------------------------------
-export interface LeadershipRole {
+export interface VoluntaryRole {
   id: string;
   role: string;
   organization: string;
@@ -84,11 +83,24 @@ export interface LeadershipRole {
   url?: string;
 }
 
-export const leadershipRoles: LeadershipRole[] = [
+export const voluntaryRoles: VoluntaryRole[] = [
+  {
+    id: "music-club-treasurer",
+    role: "Editor",
+    organization:
+      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    duration: "Sep 2023 – Jun 2024",
+    startDate: "2023-09",
+    endDate: "2024-06",
+    highlights: ["Edited articles for Arghanoon magazine of the music club"],
+    logo: MusicClubLogo,
+    url: "https://www.instagram.com/ferdowsi_music_club/",
+  },
   {
     id: "music-club-treasurer",
     role: "Board Member & Treasurer",
-    organization: "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization:
+      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
     duration: "Nov 2022 – Sep 2023",
     startDate: "2022-11",
     endDate: "2023-09",
@@ -104,7 +116,8 @@ export const leadershipRoles: LeadershipRole[] = [
   {
     id: "music-club-president",
     role: "President",
-    organization: "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization:
+      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
     duration: "Oct 2021 – Oct 2022",
     startDate: "2021-10",
     endDate: "2022-10",
@@ -121,7 +134,8 @@ export const leadershipRoles: LeadershipRole[] = [
   {
     id: "music-club-board",
     role: "Board Member",
-    organization: "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization:
+      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
     duration: "Aug 2020 – Sep 2021",
     startDate: "2020-08",
     endDate: "2021-09",
