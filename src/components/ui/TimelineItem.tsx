@@ -13,7 +13,7 @@ export default function TimelineItem({
   children,
 }: TimelineItemProps) {
   return (
-    <div className="relative flex gap-6">
+    <div className="relative flex gap-6 mt-8">
 
       {/* ---- Timeline spine: dot + vertical line ---- */}
       <div className="flex flex-col items-center">

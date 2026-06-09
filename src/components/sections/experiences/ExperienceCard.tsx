@@ -1,5 +1,6 @@
 import type { Experience } from "../../../types";
 import Badge from "../../ui/Badge";
+import CompanyIdentity from "../../ui/CompanyIdentity";
 import TimelineItem from "../../ui/TimelineItem";
 
 export default function ExperienceCard({
@@ -24,25 +25,12 @@ export default function ExperienceCard({
           >
             {exp.role}
           </h3>
-          <a
-            className="flex flex-row items-center cursor-pointer mt-0.5"
-            href={exp.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={exp.logo}
-              alt={exp.company}
-              className="h-10 w-auto mr-2 object-contain"
-            />
-            <p className="text-text-secondary font-medium mt-0.5">
-              {exp.company}
-              <span className="text-text-muted font-normal">
-                {" · "}
-                {exp.location}
-              </span>
-            </p>
-          </a>
+          <CompanyIdentity
+            logo={exp.logo}
+            name={exp.company}
+            location={exp.location}
+            url={exp.url}
+          />
         </div>
         <div
           className="flex flex-col items-start sm:items-end

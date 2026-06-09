@@ -75,6 +75,7 @@ export interface VoluntaryRole {
   id: string;
   role: string;
   organization: string;
+  location: string;
   duration: string;
   startDate: string;
   endDate: string;
@@ -87,8 +88,8 @@ export const voluntaryRoles: VoluntaryRole[] = [
   {
     id: "music-club-treasurer",
     role: "Editor",
-    organization:
-      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization: "Music Student Association",
+    location: "Ferdowsi University of Mashhad, IRAN",
     duration: "Sep 2023 – Jun 2024",
     startDate: "2023-09",
     endDate: "2024-06",
@@ -99,8 +100,8 @@ export const voluntaryRoles: VoluntaryRole[] = [
   {
     id: "music-club-treasurer",
     role: "Board Member & Treasurer",
-    organization:
-      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization: "Music Student Association",
+    location: "Ferdowsi University of Mashhad, IRAN",
     duration: "Nov 2022 – Sep 2023",
     startDate: "2022-11",
     endDate: "2023-09",
@@ -116,16 +117,16 @@ export const voluntaryRoles: VoluntaryRole[] = [
   {
     id: "music-club-president",
     role: "President",
-    organization:
-      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization: "Music Student Association",
+    location: "Ferdowsi University of Mashhad, IRAN",
     duration: "Oct 2021 – Oct 2022",
     startDate: "2021-10",
     endDate: "2022-10",
     highlights: [
       "Arranged weekly team sessions, assigned tasks, and monitored progress",
       "Negotiated with music teachers and held 21 music workshops",
-      "Coordinated communications between the music club team (6 members) and other clubs and university associations",
-      "Trained more than 30 new members and assigned tasks to grow the club",
+      "Coordinated communications between the music club team (6 members) and other university associations",
+      "Trained more than 30 enthusiastic members of the music club and assigned tasks",
       "Edited articles for Arghanoon magazine of the music club",
     ],
     logo: MusicClubLogo,
@@ -134,14 +135,14 @@ export const voluntaryRoles: VoluntaryRole[] = [
   {
     id: "music-club-board",
     role: "Board Member",
-    organization:
-      "Music Student Association - Ferdowsi University of Mashhad, IRAN",
+    organization: "Music Student Association",
+    location: "Ferdowsi University of Mashhad, IRAN",
     duration: "Aug 2020 – Sep 2021",
     startDate: "2020-08",
     endDate: "2021-09",
     highlights: [
-      "Researched and chose appropriate topics for weekly music discussion meetings",
-      "Selected and invited professional Iranian musicians as guest speakers",
+      "Held weekly music discussion meetings",
+      "Selected and invited professional Iranian musicians as guest speakers to weekly sessions",
       "Conducted Instagram Live discussions with more than 800 viewers per session",
     ],
     logo: MusicClubLogo,
