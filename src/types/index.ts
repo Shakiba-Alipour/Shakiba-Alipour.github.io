@@ -4,6 +4,8 @@
 // Every component and data file imports from here.
 // ============================================================
 
+import type { IconType } from "react-icons";
+
 export type ProjectType =
   | "freelance"
   | "professional"
@@ -53,7 +55,7 @@ export interface Experience {
   location: string;
   duration: string;
   logo: string;
-  url?:string;
+  url?: string;
   startDate: string; // ISO format for sorting, e.g. "2024-12"
   endDate: string; // "present" or ISO format
   type: ExperienceType;
@@ -100,7 +102,7 @@ export interface Education {
   };
   notableCourses?: string[];
   logo: string;
-  url?:string;
+  url?: string;
 }
 
 // ------------------------------------------------------------
@@ -138,4 +140,14 @@ export interface Certificate {
 export interface NavLink {
   label: string;
   href: string; // anchor id, e.g. "#projects"
+}
+
+// ------------------------------------------------------------
+// SocialLink
+// Used by: SocialAccounts
+// ------------------------------------------------------------
+export interface SocialLink {
+  label: string;
+  icon: IconType;
+  href: string;
 }

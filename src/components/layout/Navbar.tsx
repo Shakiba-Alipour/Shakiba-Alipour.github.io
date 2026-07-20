@@ -8,8 +8,10 @@ Responsibilities:
  ============================================================ */
 
 import { useState, useEffect, useCallback } from "react";
-import { navLinks, siteConfig } from "../../data/navigation";
+import { navLinks } from "../../data/navigation";
 import Logo from "../../assets/Logo.svg";
+import { siteConfig } from "../../data/siteConfig";
+import SocialAccounts from "../ui/SocialAccounts";
 
 /* ------------------------------------------------------------
 Types
@@ -53,6 +55,40 @@ function NavItem({ href, label, isActive, onClick }: NavItemProps) {
   );
 }
 
+function ResumeButton({ styles = "" }) {
+  return (
+    /* Download CV */
+    <div className={`hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}>
+      <a
+        href={siteConfig.cvPath}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-center hidden md:flex items-center justify-center"
+      >
+        My CV
+      </a>
+      <span className="text-xl">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 20 20"
+          aria-hidden="true"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+    </div>
+  );
+}
+
 // ------------------------------------------------------------
 // Main Navbar component
 // ------------------------------------------------------------
@@ -86,7 +122,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
   return (
     <header
       className={`
-        fixed top-0 left-0 right-0 z-50 transition-all duration-300
+        fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-10 grid-cols-6 gap-5 
         ${
           isScrolled
             ? "bg-surface shadow-sm border-b border-border py-3"
@@ -94,22 +130,25 @@ export default function Navbar({ activeSection }: NavbarProps) {
         }
       `}
     >
-      <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <nav className="max-w-fit px-6 flex items-center justify-between col-span-1">
         {/* ---- Logo / Name ---- */}
         {/* Clicking the name scrolls back to the top of the page */}
 
         <a
           href="#hero"
-          className=" flex flex=row font-display font-bold text-lg text-primary tracking-tight
+          className="flex flex-row items-center font-display text-lg text-primary align-middle
                      hover:text-primary-700 transition-colors duration-200"
         >
-          <img src={Logo} className="max-w-1/12 max-h-1/12 px-2"/>
+          <img src={Logo} className="max-w-14 max-h-14 px-2" />
           {siteConfig.name}
         </a>
 
+        {/* Download my resume button in desktop devices*/}
+        <ResumeButton styles="col-span-3" />
+
         {/* ---- Desktop Navigation ---- */}
         {/* Hidden on mobile (hidden), shown as flex row on md+ screens (md:flex) */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-3 col-span-1">
           {navLinks.map((link) => (
             <NavItem
               key={link.href}
@@ -121,6 +160,10 @@ export default function Navbar({ activeSection }: NavbarProps) {
             />
           ))}
         </div>
+
+        <span className="hidden md:flex w-px h-8 bg-text-subtle mx-3" />
+
+        <SocialAccounts styles="hidden md:flex" />
 
         {/* ---- Hamburger Button (mobile only) ---- */}
         {/* Visible only on small screens (md:hidden) */}
