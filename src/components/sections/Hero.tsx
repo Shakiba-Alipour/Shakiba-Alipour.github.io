@@ -9,27 +9,67 @@ Responsibilities:
 
 import { siteConfig } from "../../data/siteConfig";
 
+function ProfilePhoto() {
+  return (
+    <div className="animate-fade-up delay-200 shrink-0">
+      <div className="relative">
+        {/* Decorative border ring behind the photo */}
+        <div
+          className="absolute inset-0 rounded-full border-2
+                           border-primary-400 opacity-30 scale-110"
+        />
+
+        {/* Decorative filled ring — offset for depth effect */}
+        <div
+          className="absolute -inset-3 rounded-full border-2
+                           border-dashed border-primary-400 opacity-20
+                           animate-spin [animation-duration:20s]"
+        />
+
+        {/* Photo container */}
+        {/* w-56/h-56 on mobile, w-72/h-72 on desktop */}
+        <div
+          className="relative w-56 h-56 md:w-72 md:h-72 rounded-full
+                           overflow-hidden border-4 border-surface shadow-xl"
+        >
+          <img
+            src={siteConfig.profileImagePath}
+            alt={`${siteConfig.name} — Computer Engineer`}
+            className="w-full h-full object-cover"
+            // Fallback: shows initials if image hasn't been added yet
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.style.display = "none";
+              const parent = target.parentElement;
+              if (parent) {
+                parent.classList.add(
+                  "bg-primary-100",
+                  "flex",
+                  "items-center",
+                  "justify-center",
+                );
+                parent.innerHTML = `
+                        <span class="font-display font-bold text-4xl text-primary-700">
+                          SA
+                        </span>`;
+              }
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center bg-surface overflow-hidden"
+      className="w-2/3 relative flex items-left overflow-hidden"
     >
-      {/* ---- Subtle Background Decoration ---- */}
-      {/* A large faint circle in the top-right corner adds depth  */}
-      {/* without distracting from the content                     */}
-      <div
-        className="absolute -top-32 -right-32 w-150 h-150 rounded-full
-                   bg-primary-100 opacity-40 blur-3xl pointer-events-none"
-      />
-      {/* A smaller circle bottom-left for balance */}
-      <div
-        className="absolute -bottom-20 -left-20 w-75 h-75 rounded-full
-                   bg-accent opacity-10 blur-3xl pointer-events-none"
-      />
 
       {/* ---- Main Content ---- */}
-      <div className="relative max-w-6xl mx-auto px-6 py-24 w-full">
+      <div className="relative max-w-max mx-auto py-24 w-full">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
           {/* ---- Left Column: Text ---- */}
           {/* flex-1 means it takes up remaining space after the photo column */}
@@ -51,22 +91,7 @@ export default function Hero() {
             >
               {siteConfig.name}
             </h1>
-
-            {/* Title — slightly smaller, uses accent underline trick */}
-            <h2
-              className="animate-fade-up delay-300 font-display font-semibold
-                         text-2xl md:text-3xl text-text-secondary mb-6"
-            >
-              {/* The span creates a highlight under "Computer Engineer" */}
-              <span className="relative inline-block">
-                {siteConfig.title}
-                <span
-                  className="absolute bottom-0 left-0 w-full h-0.5
-                             bg-accent opacity-60"
-                />
-              </span>
-            </h2>
-
+            
             {/* Tagline — the human hook */}
             <p
               className="animate-fade-up delay-400 text-text-muted text-lg
@@ -77,53 +102,7 @@ export default function Hero() {
           </div>
 
           {/* ---- Right Column: Photo ---- */}
-          <div className="animate-fade-up delay-200 shrink-0">
-            <div className="relative">
-              {/* Decorative border ring behind the photo */}
-              <div
-                className="absolute inset-0 rounded-full border-2
-                           border-primary-400 opacity-30 scale-110"
-              />
-
-              {/* Decorative filled ring — offset for depth effect */}
-              <div
-                className="absolute -inset-3 rounded-full border-2
-                           border-dashed border-primary-400 opacity-20
-                           animate-spin [animation-duration:20s]"
-              />
-
-              {/* Photo container */}
-              {/* w-56/h-56 on mobile, w-72/h-72 on desktop */}
-              <div
-                className="relative w-56 h-56 md:w-72 md:h-72 rounded-full
-                           overflow-hidden border-4 border-surface shadow-xl"
-              >
-                <img
-                  src={siteConfig.profileImagePath}
-                  alt={`${siteConfig.name} — Computer Engineer`}
-                  className="w-full h-full object-cover"
-                  // Fallback: shows initials if image hasn't been added yet
-                  onError={(e) => {
-                    const target = e.currentTarget;
-                    target.style.display = "none";
-                    const parent = target.parentElement;
-                    if (parent) {
-                      parent.classList.add(
-                        "bg-primary-100",
-                        "flex",
-                        "items-center",
-                        "justify-center",
-                      );
-                      parent.innerHTML = `
-                        <span class="font-display font-bold text-4xl text-primary-700">
-                          SA
-                        </span>`;
-                    }
-                  }}
-                />
-              </div>
-            </div>
-          </div>
+          {/* <ProfilePhoto /> */}
         </div>
 
         {/* ---- Scroll Indicator ---- */}
