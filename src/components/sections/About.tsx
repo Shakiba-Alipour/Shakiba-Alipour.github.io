@@ -17,8 +17,6 @@ import { siteConfig } from "../../data/siteConfig";
 const quickFacts = [
   { label: "Degree", value: "B.Sc. Computer Engineering" },
   { label: "University", value: "Ferdowsi University of Mashhad, IRAN" },
-  { label: "Location", value: "Mashhad, Iran" },
-  { label: "English", value: "IELTS Band 7" },
   { label: "Available for", value: "Full-time roles & Graduate programs" },
 ];
 
