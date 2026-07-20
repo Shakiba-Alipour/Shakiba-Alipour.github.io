@@ -7,7 +7,7 @@ Responsibilities:
 ============================================================ */
 
 import SectionTitle from "../ui/SectionTitle";
-import { siteConfig } from "../../data/navigation";
+import { siteConfig } from "../../data/siteConfig";
 
 // ------------------------------------------------------------
 // Quick facts data

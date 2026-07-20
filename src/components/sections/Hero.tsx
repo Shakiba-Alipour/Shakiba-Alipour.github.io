@@ -7,7 +7,7 @@ Responsibilities:
   - Subtle background pattern for visual depth
 ============================================================ */
 
-import { siteConfig } from "../../data/navigation";
+import { siteConfig } from "../../data/siteConfig";
 
 export default function Hero() {
   return (
@@ -59,7 +59,7 @@ export default function Hero() {
             >
               {/* The span creates a highlight under "Computer Engineer" */}
               <span className="relative inline-block">
-                Computer Engineer
+                {siteConfig.title}
                 <span
                   className="absolute bottom-0 left-0 w-full h-0.5
                              bg-accent opacity-60"
@@ -74,69 +74,6 @@ export default function Hero() {
             >
               {siteConfig.tagline}
             </p>
-
-            {/* CTA Buttons */}
-            <div
-              className="animate-fade-up delay-500 flex flex-col sm:flex-row
-                            gap-4 justify-center md:justify-start"
-            >
-              {/* Primary CTA — View My Work */}
-              {/* Solid blue button, scrolls to projects section */}
-              <a
-                href="#projects"
-                className="px-8 py-2 bg-primary-700 text-white font-medium
-                           rounded-lg hover:bg-primary-600 transition-colors
-                           duration-200 text-center shadow-sm"
-              >
-                View My Work →
-              </a>
-
-              {/* Secondary CTA — Download CV */}
-              <a
-                href={siteConfig.cvPath}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-2 border-2 border-primary-700 text-primary-700
-                           font-medium rounded-lg hover:bg-primary-100
-                           transition-colors duration-200 text-center"
-              >
-                Download CV
-              </a>
-            </div>
-
-            {/* Social Links Row */}
-            <div
-              className="animate-fade-up delay-500 flex items-center gap-6
-                            justify-center md:justify-start mt-8 mx-14"
-            >
-              <a
-                href={siteConfig.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-text-muted hover:text-primary-700
-                           transition-colors duration-200 text-sm font-medium"
-              >
-                LinkedIn
-              </a>
-              <span className="text-border-strong">|</span>
-              <a
-                href={siteConfig.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-text-muted hover:text-primary-700
-                           transition-colors duration-200 text-sm font-medium"
-              >
-                GitHub
-              </a>
-              <span className="text-border-strong">|</span>
-              <a
-                href={`mailto:${siteConfig.email}`}
-                className="text-text-muted hover:text-primary-700
-                           transition-colors duration-200 text-sm font-medium"
-              >
-                Email
-              </a>
-            </div>
           </div>
 
           {/* ---- Right Column: Photo ---- */}
