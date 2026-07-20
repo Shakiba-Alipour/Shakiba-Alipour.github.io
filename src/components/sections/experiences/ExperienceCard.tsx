@@ -37,7 +37,7 @@ export default function ExperienceCard({
                                       gap-1.5 shrink-0"
         >
           <span className="text-sm text-text-muted">{exp.duration}</span>
-          <Badge type={exp.type} />
+          <Badge  label={exp.type} />
         </div>
       </div>
 

@@ -31,7 +31,7 @@ export default function ExperienceCard({
         >
           <span className="text-sm text-text-muted">{role.duration}</span>
           {/* Voluntary badge — consistent with other badges */}
-          <Badge type="voluntary" />
+          <Badge label="voluntary" />
         </div>
       </div>
 
