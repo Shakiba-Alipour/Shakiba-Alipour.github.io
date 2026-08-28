@@ -8,8 +8,7 @@ import CompanyIdentity from "../../ui/CompanyIdentity";
 
 export default function Experience() {
   return (
-    <section id="experience" className="bg-surface py-24">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6 bg-surface py-24">
         <SectionTitle
           tag="Experience"
           title="Where I've worked and what I've built"
@@ -48,6 +47,5 @@ export default function Experience() {
           ))}
         </div>
       </div>
-    </section>
   );
 }
