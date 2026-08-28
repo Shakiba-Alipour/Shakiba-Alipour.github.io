@@ -1,9 +1,3 @@
-// ============================================================
-// data/skills.ts
-// Skills grouped by category for the Skills section.
-// Keep levels honest — this is a professional document.
-// ============================================================
-
 import type { SkillGroup } from "../types";
 
 export const skillGroups: SkillGroup[] = [
@@ -69,12 +63,3 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
 ];
-
-// ------------------------------------------------------------
-// Level descriptions — used in UI tooltips or legends
-// ------------------------------------------------------------
-export const levelDescriptions: Record<string, string> = {
-  professional: "Used in production — professional, day-to-day experience",
-  intermediate: "Solid working knowledge — coursework and/or personal projects",
-  academic: "Studied formally — strong theoretical foundation",
-};

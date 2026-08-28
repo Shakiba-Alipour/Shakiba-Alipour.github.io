@@ -35,29 +35,11 @@ function App() {
   return (
     <>
       <Navbar activeSection={activeSection} />
-      <main>
+      <main className="flex flex-col items-center justify-center">
         {/* Sections go here — each needs an id matching its nav link */}
-        <section
-          id="hero"
-          className="min-h-screen bg-surface-50 
-          flex items-center justify-center"
-        >
           <Hero />
-        </section>
-        <section
-          id="about"
-          className="min-h-screen bg-surface 
-          flex items-center justify-center"
-        >
           <About />
-        </section>
-        <section
-          id="experiences"
-          className="min-h-screen bg-surface 
-          flex items-center justify-center"
-        >
           <Experience />
-        </section>
       </main>
     </>
   );

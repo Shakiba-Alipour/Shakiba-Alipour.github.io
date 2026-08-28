@@ -1,8 +1,3 @@
-/* ============================================================
-A single item in a vertical timeline.
-Used by the Experience section.
-============================================================ */
-
 interface TimelineItemProps {
   isLast?: boolean;       // hides the connecting line on the last item
   children: React.ReactNode;

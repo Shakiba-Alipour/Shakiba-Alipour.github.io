@@ -1,8 +1,3 @@
-/* ============================================================
-Reusable section heading used by every section.
-Accepts a tag, optional title, and optional alignment.
-============================================================ */
-
 interface SectiontagProps {
   tag: string;
   title?: string;

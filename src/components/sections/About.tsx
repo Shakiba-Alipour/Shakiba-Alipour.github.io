@@ -2,18 +2,12 @@
 Responsibilities:
   - Tell Shakiba's story as a narrative (not a resume dump)
   - Quick facts card for scannable key info
-  - Leadership callout (folded in from Experience)
   - Alternating background color to visually separate sections
 ============================================================ */
 
 import SectionTitle from "../ui/SectionTitle";
 import { siteConfig } from "../../data/siteConfig";
 
-// ------------------------------------------------------------
-// Quick facts data
-// Defined locally — this is display-only info, not reused
-// elsewhere, so it doesn't need to live in /data
-// ------------------------------------------------------------
 const quickFacts = [
   { label: "Degree", value: "B.Sc. Computer Engineering" },
   { label: "University", value: "Ferdowsi University of Mashhad, IRAN" },

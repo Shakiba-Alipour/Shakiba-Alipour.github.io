@@ -1,8 +1,3 @@
-// ============================================================
-// data/projects.ts
-// All project data. Edit this file to add/update projects.
-// Components consume this — never hardcode project data in JSX.
-// ============================================================
 import type { Project } from "../types/index";
 
 export const projects: Project[] = [

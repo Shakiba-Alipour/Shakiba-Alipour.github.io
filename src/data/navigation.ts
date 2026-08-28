@@ -1,7 +1,3 @@
-/* ============================================================
-  Navbar links and site-wide config.
- ============================================================ */
-
 import type { NavLink } from "../types";
 
 export const navLinks: NavLink[] = [

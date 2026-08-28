@@ -1,13 +1,8 @@
-// ============================================================
-// data/education.ts
-// Education history and certificates.
-// ============================================================
-
 import type { Education, Certificate } from "../types";
 
 export const educationHistory: Education[] = [
   {
-    id: "fum-bsc",
+    id: "bsc",
     degree: "Bachelor of Science — Computer Engineering",
     institution: "Ferdowsi University of Mashhad (FUM)",
     location: "Mashhad, Iran",
@@ -15,7 +10,6 @@ export const educationHistory: Education[] = [
     startDate: "2018-09",
     endDate: "2023-09",
     gpa: "16.44",
-    gpaNotes: "out of 20 (Iranian grading system)",
     thesis: {
       title: "Weather Forecast Website",
       supervisor: "Dr. Mostafa Nouri Baygi",
@@ -33,6 +27,7 @@ export const educationHistory: Education[] = [
       "Information Retrieval",
       "Operating Systems",
     ],
+    logo: "",
   },
 ];
 

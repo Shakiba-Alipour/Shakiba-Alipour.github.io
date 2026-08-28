@@ -1,8 +1,3 @@
-// ============================================================
-// data/awards.ts
-// All competition awards and honors, ordered most recent first.
-// ============================================================
-
 import type { Award } from "../types";
 
 export const awards: Award[] = [
@@ -13,7 +8,6 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "1st",
     scope: "university",
-    emoji: "🥇",
   },
   {
     year: 2023,
@@ -22,7 +16,6 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "1st",
     scope: "university",
-    emoji: "🥇",
   },
   {
     year: 2023,
@@ -31,7 +24,6 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "2nd",
     scope: "university",
-    emoji: "🥈",
   },
   {
     year: 2022,
@@ -40,16 +32,15 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "special",
     scope: "university",
-    emoji: "🏆",
   },
   {
     year: 2022,
     title: "Best Artistic Club",
     event: "10th National Festival of University Associations (Rouyesh)",
-    organization: "National",
+    organization:
+      "Deputy Minister of Culture, Social Affairs and Students, Ministry of Science",
     rank: "1st",
     scope: "national",
-    emoji: "🥇",
   },
   {
     year: 2022,
@@ -58,7 +49,6 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "1st",
     scope: "university",
-    emoji: "🥇",
   },
   {
     year: 2022,
@@ -67,7 +57,6 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "1st",
     scope: "university",
-    emoji: "🥇",
   },
   {
     year: 2021,
@@ -76,24 +65,23 @@ export const awards: Award[] = [
     organization: "Ferdowsi University of Mashhad",
     rank: "1st",
     scope: "university",
-    emoji: "🥇",
   },
   {
     year: 2021,
     title: "Best Artistic Club",
     event: "9th National Festival of University Associations (Rouyesh)",
-    organization: "National",
+    organization:
+      "Deputy Minister of Culture, Social Affairs and Students, Ministry of Science",
     rank: "2nd",
     scope: "national",
-    emoji: "🥈",
   },
   {
     year: 2020,
     title: "Best Artistic Club",
     event: "11th National Festival of University Associations (Rouyesh)",
-    organization: "National",
+    organization:
+      "Deputy Minister of Culture, Social Affairs and Students, Ministry of Science",
     rank: "2nd",
     scope: "national",
-    emoji: "🥈",
   },
 ];

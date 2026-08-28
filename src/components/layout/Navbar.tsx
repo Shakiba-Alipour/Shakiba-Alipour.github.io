@@ -132,7 +132,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
         }
       `}
     >
-      <nav className="max-w px-6 flex items-center justify-between col-span-1">
+      <nav className="px-6 flex items-center justify-between col-span-1">
         {/* ---- Logo / Name ---- */}
         {/* Clicking the name scrolls back to the top of the page */}
 

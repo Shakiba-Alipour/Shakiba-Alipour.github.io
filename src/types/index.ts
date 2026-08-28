@@ -21,6 +21,7 @@ export type SkillLevel =
 
 export type ExperienceType =
   | "full-time"
+  | "part-time"
   | "internship"
   | "student-job"
   | "voluntary";
@@ -28,11 +29,6 @@ export type ExperienceType =
 export type AwardRank = "1st" | "2nd" | "3rd" | "special";
 
 export type AwardScope = "university" | "national";
-
-// ------------------------------------------------------------
-// Project
-// Used by: Projects section, ProjectModal
-// ------------------------------------------------------------
 export interface Project {
   id: string;
   title: string;
@@ -46,12 +42,6 @@ export interface Project {
   image?: string; // path to screenshot, e.g. "/assets/projects/hasht.png"
   featured: boolean; // show prominently on projects grid
 }
-
-// ------------------------------------------------------------
-// Experience
-// Used by: Experience section (timeline)
-// Leadership context is folded in via leadershipNote
-// ------------------------------------------------------------
 export interface Experience {
   id: string;
   role: string;
@@ -68,11 +58,6 @@ export interface Experience {
   leadershipNote?: string; // folded-in leadership highlight, shown as a subtle callout
   supervisorQuote?: string; // optional pull quote from recommendation letter
 }
-
-// ------------------------------------------------------------
-// Skill
-// Used by: Skills section
-// ------------------------------------------------------------
 export interface Skill {
   name: string;
   level: SkillLevel;
@@ -83,11 +68,6 @@ export interface SkillGroup {
   icon?: string; // optional icon name from react-icons
   skills: Skill[];
 }
-
-// ------------------------------------------------------------
-// Education
-// Used by: Education section
-// ------------------------------------------------------------
 export interface Education {
   id: string;
   degree: string;
@@ -97,7 +77,6 @@ export interface Education {
   startDate: string;
   endDate: string;
   gpa?: string;
-  gpaNotes?: string; // e.g. "out of 20 (Iranian grading system)"
   thesis?: {
     title: string;
     supervisor: string;
@@ -108,11 +87,6 @@ export interface Education {
   logo: string;
   url?: string;
 }
-
-// ------------------------------------------------------------
-// Award
-// Used by: Awards section
-// ------------------------------------------------------------
 export interface Award {
   year: number;
   title: string;
@@ -120,13 +94,7 @@ export interface Award {
   organization: string;
   rank: AwardRank;
   scope: AwardScope;
-  emoji: string;
 }
-
-// ------------------------------------------------------------
-// Certificate
-// Used by: Education section or standalone Certificates section
-// ------------------------------------------------------------
 export interface Certificate {
   id: string;
   title: string;
@@ -134,22 +102,12 @@ export interface Certificate {
   date: string;
   credentialUrl?: string;
   credentialId?: string;
-  credits?: string; // e.g. "2 ECTS"
+  credits?: string;
 }
-
-// ------------------------------------------------------------
-// NavLink
-// Used by: Navbar
-// ------------------------------------------------------------
 export interface NavLink {
   label: string;
-  href: string; // anchor id, e.g. "#projects"
+  href: string;
 }
-
-// ------------------------------------------------------------
-// SocialLink
-// Used by: SocialAccounts
-// ------------------------------------------------------------
 export interface SocialLink {
   label: string;
   icon: IconType;

@@ -1,8 +1,5 @@
 // ============================================================
-// data/experience.ts
-// Professional, internship, and student-job experience.
 // Leadership is folded in via leadershipNote where relevant.
-// Ordered most recent first.
 // ============================================================
 import type { Experience } from "../types";
 import HamraheAvalLogo from "../assets/hamrahe_aval_logo.png";

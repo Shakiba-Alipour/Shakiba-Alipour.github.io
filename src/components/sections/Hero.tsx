@@ -1,12 +1,3 @@
-/* ============================================================
-Responsibilities:
-  - First section of the page, full viewport height
-  - Two-column layout: text left, photo right (stacked on mobile)
-  - Staggered fade-up entrance animations
-  - Two CTA buttons: View My Work, Download CV
-  - Subtle background pattern for visual depth
-============================================================ */
-
 import { siteConfig } from "../../data/siteConfig";
 
 function ProfilePhoto() {
