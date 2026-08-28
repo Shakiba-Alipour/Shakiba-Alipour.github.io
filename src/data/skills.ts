@@ -21,10 +21,10 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "State & Tools",
     skills: [
-      { name: "Zustand", level: "professional" },
+      { name: "Zustand", level: "beginner" },
       { name: "Redux", level: "intermediate" },
       { name: "Git", level: "professional" },
-      { name: "Figma", level: "intermediate" },
+      { name: "Figma", level: "beginner" },
       { name: "Node.js", level: "intermediate" },
       { name: "jQuery", level: "intermediate" },
     ],
@@ -32,7 +32,7 @@ export const skillGroups: SkillGroup[] = [
   {
     category: "Languages",
     skills: [
-      { name: "Java", level: "intermediate" },
+      { name: "Java", level: "professional" },
       { name: "Python", level: "intermediate" },
       { name: "C", level: "academic" },
     ],
@@ -55,6 +55,17 @@ export const skillGroups: SkillGroup[] = [
       { name: "Prompt Engineering", level: "intermediate" },
       { name: "n8n Workflow Automation", level: "intermediate" },
       { name: "AI-assisted Development", level: "intermediate" },
+    ],
+  },
+  {
+    category: "Soft Skills",
+    skills: [
+      { name: "Team Leadership", level: "professional" },
+      { name: "Cross-functional Collaboration", level: "professional" },
+      { name: "Technical Communication", level: "professional" },
+      { name: "Mentoring", level: "professional" },
+      { name: "Budget Management", level: "professional" },
+      { name: "Event Organizing", level: "professional" },
     ],
   },
 ];

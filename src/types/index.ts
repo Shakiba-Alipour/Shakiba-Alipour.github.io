@@ -13,7 +13,11 @@ export type ProjectType =
   | "thesis"
   | "personal";
 
-export type SkillLevel = "professional" | "intermediate" | "academic";
+export type SkillLevel =
+  | "professional"
+  | "intermediate"
+  | "academic"
+  | "beginner";
 
 export type ExperienceType =
   | "full-time"
