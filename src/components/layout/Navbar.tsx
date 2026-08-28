@@ -95,24 +95,15 @@ function DownloadResumeButton({ styles = "" }) {
 // Main Navbar component
 // ------------------------------------------------------------
 export default function Navbar({ activeSection }: NavbarProps) {
-  // Is the page scrolled past the hero? Controls background style
   const [isScrolled, setIsScrolled] = useState(false);
-
-  // Is the mobile menu open?
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Scroll listener — runs once on mount, cleans up on unmount
-  // useCallback prevents this function from being recreated on
-  // every render, which would cause the effect to re-run unnecessarily
   const handleScroll = useCallback(() => {
     setIsScrolled(window.scrollY > 20);
   }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
-
-    // Cleanup: remove the listener when the component unmounts
-    // Without this, you'd accumulate listeners on every re-render
     return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
@@ -124,7 +115,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
   return (
     <header
       className={`
-        fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-10 grid-cols-6 gap-5 
+        fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-10
         ${
           isScrolled
             ? "bg-surface shadow-sm border-b border-border py-3"
@@ -132,7 +123,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
         }
       `}
     >
-      <nav className="px-6 flex items-center justify-between col-span-1">
+      <nav className="px-6 flex items-center justify-between">
         {/* ---- Logo / Name ---- */}
         {/* Clicking the name scrolls back to the top of the page */}
 

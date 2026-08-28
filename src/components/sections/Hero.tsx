@@ -54,13 +54,9 @@ function ProfilePhoto() {
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="w-2/3 relative flex items-left overflow-hidden"
-    >
-
+    <>
       {/* ---- Main Content ---- */}
-      <div className="relative max-w-max mx-auto py-24 w-full">
+      <div className="relative mx-auto py-24 w-max flex items-left overflow-hidden">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
           {/* ---- Left Column: Text ---- */}
           {/* flex-1 means it takes up remaining space after the photo column */}
@@ -82,7 +78,7 @@ export default function Hero() {
             >
               {siteConfig.name}
             </h1>
-            
+
             {/* Tagline — the human hook */}
             <p
               className="animate-fade-up delay-400 text-text-muted text-lg
@@ -108,6 +104,6 @@ export default function Hero() {
           <div className="w-px h-8 bg-linear-to-b from-text-subtle to-transparent" />
         </div>
       </div>
-    </section>
+    </>
   );
 }
