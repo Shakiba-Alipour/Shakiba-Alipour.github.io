@@ -1,4 +1,3 @@
-import { siteConfig } from "../../data/siteConfig";
 import { socialLinks } from "../../data/socials";
 
 export default function SocialAccounts({ styles = "" }) {
@@ -11,7 +10,7 @@ export default function SocialAccounts({ styles = "" }) {
         const Icon = account.icon;
         return (
           <a
-            href={siteConfig.linkedin}
+            href={account.href}
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary hover:text-primary-700
