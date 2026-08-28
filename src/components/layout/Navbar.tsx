@@ -55,10 +55,12 @@ function NavItem({ href, label, isActive, onClick }: NavItemProps) {
   );
 }
 
-function ResumeButton({ styles = "" }) {
+function DownloadResumeButton({ styles = "" }) {
   return (
     /* Download CV */
-    <div className={`hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}>
+    <div
+      className={`hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}
+    >
       <a
         href={siteConfig.cvPath}
         target="_blank"
@@ -130,7 +132,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
         }
       `}
     >
-      <nav className="max-w-fit px-6 flex items-center justify-between col-span-1">
+      <nav className="max-w px-6 flex items-center justify-between col-span-1">
         {/* ---- Logo / Name ---- */}
         {/* Clicking the name scrolls back to the top of the page */}
 
@@ -144,26 +146,28 @@ export default function Navbar({ activeSection }: NavbarProps) {
         </a>
 
         {/* Download my resume button in desktop devices*/}
-        <ResumeButton styles="col-span-3" />
+        <DownloadResumeButton styles="col-span-3" />
 
         {/* ---- Desktop Navigation ---- */}
         {/* Hidden on mobile (hidden), shown as flex row on md+ screens (md:flex) */}
-        <div className="hidden md:flex items-center gap-3 col-span-1">
-          {navLinks.map((link) => (
-            <NavItem
-              key={link.href}
-              href={link.href}
-              label={link.label}
-              // Strip the "#" from "#about" to compare with "about"
-              isActive={activeSection === link.href.replace("#", "")}
-              onClick={handleNavClick}
-            />
-          ))}
-        </div>
+        <span className="max-w-fit flex flex-row">
+          <div className="hidden md:flex items-center gap-3 col-span-1">
+            {navLinks.map((link) => (
+              <NavItem
+                key={link.href}
+                href={link.href}
+                label={link.label}
+                // Strip the "#" from "#about" to compare with "about"
+                isActive={activeSection === link.href.replace("#", "")}
+                onClick={handleNavClick}
+              />
+            ))}
+          </div>
 
-        <span className="hidden md:flex w-px h-8 bg-text-subtle mx-3" />
+          <span className="hidden md:flex w-px h-8 bg-text-subtle mx-3" />
 
-        <SocialAccounts styles="hidden md:flex" />
+          <SocialAccounts styles="hidden md:flex" />
+        </span>
 
         {/* ---- Hamburger Button (mobile only) ---- */}
         {/* Visible only on small screens (md:hidden) */}
