@@ -4,6 +4,7 @@ import { navLinks } from "./data/navigation";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Experience from "./components/sections/experiences/Experience";
+import Projects from "./components/sections/projects/Projects";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -45,6 +46,9 @@ function App() {
         </section>
         <section id="experience">
           <Experience />
+        </section>
+        <section id="projects">
+          <Projects />
         </section>
       </main>
     </>
