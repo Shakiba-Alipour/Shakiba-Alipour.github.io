@@ -9,7 +9,7 @@ Responsibilities:
 
 import { useState, useEffect, useCallback } from "react";
 import { navLinks } from "../../data/navigation";
-import Logo from "../../assets/Logo.svg";
+import Logo from "../../assets/logos/Logo.svg";
 import { siteConfig } from "../../data/siteConfig";
 import SocialAccounts from "../ui/SocialAccounts";
 

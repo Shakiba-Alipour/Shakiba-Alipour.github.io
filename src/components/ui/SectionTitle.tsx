@@ -21,12 +21,12 @@ export default function Sectiontag({
       </p>
 
       {title && (
-        <h2
-          className="mt-3 text-text-muted text-3xl max-w-2xl
+        <h4
+          className="mt-3 text-text-muted text-xl max-w-2xl font-medium
           ${align === 'center' ? 'mx-auto' : ''}"
         >
           {title}
-        </h2>
+        </h4>
       )}
     </div>
   );

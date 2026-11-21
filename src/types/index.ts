@@ -39,8 +39,10 @@ export interface Project {
   live?: string;
   type: ProjectType;
   highlights: string[]; // bullet points in modal
-  image?: string; // path to screenshot, e.g. "/assets/projects/hasht.png"
-  featured: boolean; // show prominently on projects grid
+  image?: ImageType;
+  images?: ImageType[]; //additional screenshots for the modal
+  displayOnSite: boolean; // show on projects grid
+  organization?:string;
 }
 export interface Experience {
   id: string;
@@ -113,3 +115,9 @@ export interface SocialLink {
   icon: IconType;
   href: string;
 }
+
+export type ImageType = {
+  src: string;
+  alt: string;
+  aspect: "landscape" | "portrait" | "square";
+};

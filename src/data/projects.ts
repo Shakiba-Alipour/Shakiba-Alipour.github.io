@@ -1,8 +1,17 @@
 import type { Project } from "../types/index";
+import ForoushyarDashboard from "../assets/projects/foroushyar/Landing Page.svg";
+import Dashboard from "../assets/projects/foroushyar/Dashboard.svg";
+import Product from "../assets/projects/foroushyar/Product.svg";
+import Settings from "../assets/projects/foroushyar/Settings.svg";
+import QuizLanding from "../assets/projects/hashtgroup/Mini Landing.svg";
+import StudentData from "../assets/projects/hashtgroup/Profile - 45.svg";
+import Quiz from "../assets/projects/hashtgroup/Profile - 47.svg";
+import QuizFullPage from "../assets/projects/hashtgroup/Landing Page.svg";
 
 export const projects: Project[] = [
   {
     id: "foroushyar-platform",
+    organization: "Atena Tech Company",
     title: "Foroushyar Platform",
     shortDescription:
       "Complete front-end redevelopment of an AI-powered chatbot sales platform.",
@@ -10,7 +19,7 @@ export const projects: Project[] = [
       "Led the full redevelopment of the Foroushyar platform's front-end from scratch during my year-long role at Atena Tech. The platform is an AI-driven chatbot service for businesses. I was responsible for translating detailed Figma designs into a production-ready, fully responsive interface, integrating backend APIs, and managing state across the application.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
     type: "professional",
-    featured: true,
+    displayOnSite: true,
     highlights: [
       "Led complete front-end rebuild from scratch — sole front-end developer",
       "Translated Figma designs pixel-accurately into responsive UI",
@@ -19,10 +28,22 @@ export const projects: Project[] = [
       "Improved platform responsiveness, usability, and code maintainability",
       "Supervisor noted growth 'exceeded expectations for a junior developer'",
     ],
+    live: "https://foroush-yar.ir/",
+    image: {
+      src: ForoushyarDashboard,
+      alt: "Foroushyar Landing Page",
+      aspect: "landscape",
+    },
+    images: [
+      { src: Dashboard, alt: "Foroushyar Dashboard Page", aspect: "portrait" },
+      { src: Settings, alt: "Foroushyar Settings Page", aspect: "portrait" },
+      { src: Product, alt: "Foroushyar Product Page", aspect: "portrait" },
+    ],
   },
   {
     id: "hasht-group",
-    title: "HashtGroup — Educational Quiz Platform",
+    organization: "Hasht Group",
+    title: "Educational Quiz Platform",
     shortDescription:
       "Responsive quiz platform with leaderboard and scoring system for a private school.",
     longDescription:
@@ -30,12 +51,26 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/Shakiba-Alipour/HashtGroup",
     type: "freelance",
-    featured: true,
+    displayOnSite: true,
     highlights: [
       "Sole front-end developer on a client-facing production project",
       "Implemented quizzes across multiple courses with a scoring engine",
       "Built a live leaderboard for student engagement",
       "Delivered fully responsive UI from Figma designs",
+    ],
+    image: {
+      src: QuizLanding,
+      alt: "Quiz Platform Landing Page",
+      aspect: "landscape",
+    },
+    images: [
+      {
+        src: QuizFullPage,
+        alt: "Quiz Platform Landing Page For Mobile Devices",
+        aspect: "portrait",
+      },
+      { src: StudentData, alt: "Student Data Page", aspect: "landscape" },
+      { src: Quiz, alt: "Quiz Page", aspect: "landscape" },
     ],
   },
   {
@@ -48,7 +83,7 @@ export const projects: Project[] = [
     tech: ["JavaScript", "Node.js", "HTML", "CSS"],
     github: "https://github.com/Shakiba-Alipour/Weather-Forecast-Website",
     type: "thesis",
-    featured: true,
+    displayOnSite: false,
     highlights: [
       "First project using JavaScript, Node.js, and REST APIs — fully self-taught",
       "Integrated a third-party weather API for real-time forecast data",
@@ -67,7 +102,7 @@ export const projects: Project[] = [
     github:
       "https://github.com/Shakiba-Alipour/A-Simple-Programming-Language-Using-Antlr",
     type: "academic",
-    featured: false,
+    displayOnSite: false,
     highlights: [
       "Designed full grammar rules for a custom language",
       "Implemented lexer and parser using Antlr4",
@@ -84,7 +119,7 @@ export const projects: Project[] = [
     tech: ["Java"],
     github: "https://github.com/Shakiba-Alipour/Turing-Machine-Simulator",
     type: "academic",
-    featured: false,
+    displayOnSite: false,
     highlights: [
       "Solo implementation of a Turing Machine in Java",
       "Supports custom tape input and state transitions",
@@ -101,7 +136,7 @@ export const projects: Project[] = [
     tech: ["Python"],
     github: "https://github.com/Shakiba-Alipour/Data-Mining-Project",
     type: "academic",
-    featured: false,
+    displayOnSite: false,
     highlights: [
       "Web crawling and data collection from a real institutional website",
       "Frequent pattern extraction and data preprocessing pipeline",
@@ -118,7 +153,7 @@ export const projects: Project[] = [
     tech: ["Java", "Python", "JUnit", "Selenium"],
     github: "https://github.com/Shakiba-Alipour/Money-Tracker",
     type: "academic",
-    featured: false,
+    displayOnSite: false,
     highlights: [
       "Wrote unit tests with JUnit for a Money Tracker application",
       "Wrote integration tests with Selenium for an Employee Management System",

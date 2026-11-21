@@ -2,10 +2,10 @@
 // Leadership is folded in via leadershipNote where relevant.
 // ============================================================
 import type { Experience } from "../types";
-import HamraheAvalLogo from "../assets/hamrahe_aval_logo.png";
-import MusicClubLogo from "../assets/Music_Club.jpg";
-import KanoonLogo from "../assets/shora_kanoon.png";
-import ForoushyarLogo from "../assets/Foroushyar.png";
+import HamraheAvalLogo from "../assets/logos/hamrahe_aval_logo.png";
+import MusicClubLogo from "../assets/logos/Music_Club.jpg";
+import KanoonLogo from "../assets/logos/shora_kanoon.png";
+import ForoushyarLogo from "../assets/projects/foroushyar/Foroushyar.png";
 
 export const experiences: Experience[] = [
   {
