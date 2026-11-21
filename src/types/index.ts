@@ -42,7 +42,7 @@ export interface Project {
   image?: ImageType;
   images?: ImageType[]; //additional screenshots for the modal
   displayOnSite: boolean; // show on projects grid
-  organization?:string;
+  organization?: string;
 }
 export interface Experience {
   id: string;
@@ -62,13 +62,17 @@ export interface Experience {
 }
 export interface Skill {
   name: string;
-  level: SkillLevel;
+  level?: SkillLevel;
 }
 
 export interface SkillGroup {
   category: string;
   icon?: string; // optional icon name from react-icons
-  skills: Skill[];
+  skills?: Skill[];
+  subcategories?: {
+    name: string;
+    skills: Skill[];
+  }[];
 }
 export interface Education {
   id: string;

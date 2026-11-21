@@ -5,6 +5,7 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Experience from "./components/sections/experiences/Experience";
 import Projects from "./components/sections/projects/Projects";
+import Skills from "./components/sections/Skills";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -49,6 +50,9 @@ function App() {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
         </section>
       </main>
     </>
