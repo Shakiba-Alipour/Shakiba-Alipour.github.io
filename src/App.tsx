@@ -6,6 +6,8 @@ import About from "./components/sections/About";
 import Experience from "./components/sections/experiences/Experience";
 import Projects from "./components/sections/projects/Projects";
 import Skills from "./components/sections/Skills";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("hero");
@@ -54,7 +56,11 @@ function App() {
         <section id="skills">
           <Skills />
         </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
+      <Footer />
     </>
   );
 }
