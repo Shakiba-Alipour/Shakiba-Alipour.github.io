@@ -56,7 +56,7 @@ export default function Hero() {
   return (
     <>
       {/* ---- Main Content ---- */}
-      <div className="relative mx-auto py-24 w-max flex items-left overflow-hidden">
+      <div className="h-screen relative mx-auto py-24 w-max flex items-left overflow-hidden">
         <div className="flex flex-col-reverse md:flex-row items-center gap-12 md:gap-16">
           {/* ---- Left Column: Text ---- */}
           {/* flex-1 means it takes up remaining space after the photo column */}
