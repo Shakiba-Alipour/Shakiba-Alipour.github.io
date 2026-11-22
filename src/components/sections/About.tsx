@@ -9,9 +9,11 @@ import SectionTitle from "../ui/SectionTitle";
 import { siteConfig } from "../../data/siteConfig";
 
 const quickFacts = [
-  { label: "Degree", value: "B.Sc. Computer Engineering" },
-  { label: "University", value: "Ferdowsi University of Mashhad, IRAN" },
-  { label: "Available for", value: "Full-time roles & Graduate programs" },
+  { label: "Currently", value: "M.Sc. Student in Computer Engineering" },
+  { label: "University", value: "Politecnico di Torino" },
+  { label: "Focus", value: "Software Engineering · Human-AI Interaction" },
+  { label: "Based in", value: "Turin, Italy" },
+  { label: "Available for", value: "Full-time or Part-time roles" },
 ];
 
 // ------------------------------------------------------------
