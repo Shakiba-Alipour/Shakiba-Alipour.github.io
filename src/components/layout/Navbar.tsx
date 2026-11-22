@@ -39,16 +39,14 @@ function NavItem({ href, label, isActive, onClick }: NavItemProps) {
       href={href}
       onClick={onClick}
       className={`relative text-sm font-medium tracking-wide transition-colors duration-200
-        text-text-secondary hover:text-primary-700
-        after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
-        after:origin-left after:bg-primary-700 after:transition-transform
-        after:duration-200
-        ${
-          isActive
-            ? "text-primary-700 after:scale-x-100"
-            : "after:scale-x-0 hover:after:scale-x-100"
-        }
-      `}
+  ${
+    isActive
+      ? "text-primary-700 after:scale-x-100"
+      : "text-text-secondary after:scale-x-0 hover:text-primary-700 hover:after:scale-x-100"
+  }
+  after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
+  after:origin-left after:bg-primary-700 after:transition-transform
+  after:duration-200`}
     >
       {label}
     </a>
@@ -57,36 +55,34 @@ function NavItem({ href, label, isActive, onClick }: NavItemProps) {
 
 function DownloadResumeButton({ styles = "" }) {
   return (
-    /* Download CV */
-    <div
-      className={`font-medium text-center hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}
+    <a
+      href={siteConfig.cvPath}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`hidden md:flex items-center justify-center gap-1.5
+        text-sm font-medium text-text-secondary
+        transition-colors duration-200
+        hover:text-primary-700 ${styles}`}
     >
-      <a
-        href={siteConfig.cvPath}
-        target="_blank"
-        rel="noopener noreferrer"
+      <span>My CV</span>
+
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        strokeWidth="0"
+        viewBox="0 0 20 20"
+        aria-hidden="true"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        My CV
-      </a>
-      <span className="text-xl">
-        <svg
-          stroke="currentColor"
-          fill="currentColor"
-          stroke-width="0"
-          viewBox="0 0 20 20"
-          aria-hidden="true"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </span>
-    </div>
+        <path
+          fillRule="evenodd"
+          d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </a>
   );
 }
 
