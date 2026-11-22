@@ -7,52 +7,57 @@
   --font-display: "Raleway", sans-serif;
   --font-body: "Source Sans 3", sans-serif;
 
-  /* 
-    COLOR PALETTE — Professional Blue/Grey
-    
+  /*
+    COLOR PALETTE — Navy + Burgundy + Warm White
+
     Naming convention:
-    primary     = the main brand color (deep blue)
+    primary     = the main brand color (deep burgundy)
     primary-*   = lighter/darker shades of primary
     surface-*   = background layers (page, cards, elevated)
     text-*      = text hierarchy
     border-*    = dividers and outlines
-    accent      = a single pop color for CTAs and highlights
+    accent      = the main interactive accent
   */
 
-  /* Primary — Deep Professional Blue */
-  --color-primary: #1e3a5f; /* darkest — used for strong headings */
-  --color-primary-700: #1e40af; /* main blue — buttons, active states */
-  --color-primary-600: #2563eb; /* hover blue */
-  --color-primary-400: #60a5fa; /* light blue — subtle highlights */
-  --color-primary-100: #dbeafe; /* very light blue — badge backgrounds */
+  /* Primary — Deep Burgundy */
+  --color-primary: #172033; /* deep navy — strong structural color */
+  --color-primary-700: #7a2436; /* main burgundy — buttons, active states */
+  --color-primary-600: #8f3045; /* lighter burgundy — hover states */
+  --color-primary-400: #c16d7e; /* muted burgundy — subtle highlights */
+  --color-primary-100: #f5e5e8; /* very light burgundy — subtle backgrounds */
+  --color-primary-hover: #5f1c2b; /* dark burgundy — accent hover */
 
-  /* Surfaces — Light Grey Hierarchy */
-  --color-surface: #ffffff; /* page background */
-  --color-surface-50: #f8fafc; /* subtle section backgrounds */
-  --color-surface-100: #f1f5f9; /* card backgrounds */
-  --color-surface-200: #e2e8f0; /* elevated card / hover states */
+  /* Surfaces — Warm White Hierarchy */
+  --color-surface: #faf9f7; /* warm white — page background */
+  --color-surface-50: #fdfcfb; /* subtle section backgrounds */
+  --color-surface-100: #f3f1ee; /* soft warm grey — card backgrounds */
+  --color-surface-200: #ebe8e4; /* elevated card / hover states */
 
   /* Text Hierarchy */
-  --color-text-primary: #0f172a; /* headings — near black */
-  --color-text-secondary: #334155; /* body text — dark slate */
-  --color-text-muted: #64748b; /* captions, metadata — medium grey */
-  --color-text-subtle: #94a3b8; /* placeholders, disabled */
+  --color-text-primary: #172033; /* deep navy — headings */
+  --color-text-secondary: #596273; /* slate — body text */
+  --color-text-muted: #7b8493; /* muted slate — captions, metadata */
+  --color-text-subtle: #a0a7b1; /* subtle text, placeholders */
 
   /* Borders */
-  --color-border: #e2e8f0; /* default dividers */
-  --color-border-strong: #cbd5e1; /* stronger borders on hover */
+  --color-border: #d9d7d2; /* default warm-grey dividers */
+  --color-border-strong: #c5c2bc; /* stronger borders on hover */
 
-  /* Accent — used sparingly for CTAs and key highlights */
-  --color-accent: #0ea5e9; /* sky blue — energetic but professional */
-  --color-accent-hover: #0284c7; /* darker on hover */
+  /* Accent — Deep Burgundy */
+  --color-accent: #7a2436; /* primary burgundy — key highlights */
+  --color-accent-hover: #5f1c2b; /* dark burgundy — hover */
 
-  /* Status colors — for skill level badges */
-  --color-level-pro: #166534; /* professional — dark green */
-  --color-level-pro-bg: #dcfce7; /* professional bg — light green */
-  --color-level-mid: #1e40af; /* intermediate — blue */
-  --color-level-mid-bg: #dbeafe; /* intermediate bg — light blue */
-  --color-level-acad: #6b21a8; /* academic — purple */
-  --color-level-acad-bg: #f3e8ff; /* academic bg — light purple */
+  /* Navy Scale — available for structural UI elements */
+  --color-navy-50: #f3f5f8;
+  --color-navy-100: #e5e9ef;
+  --color-navy-200: #ccd3de;
+  --color-navy-300: #aab4c3;
+  --color-navy-400: #7f8b9d;
+  --color-navy-500: #596273;
+  --color-navy-600: #414b5d;
+  --color-navy-700: #303a4c;
+  --color-navy-800: #222c3e;
+  --color-navy-900: #172033;
 }
 
 /* ------------------------------------------------------------
@@ -133,15 +138,19 @@
 .delay-100 {
   animation-delay: 100ms;
 }
+
 .delay-200 {
   animation-delay: 200ms;
 }
+
 .delay-300 {
   animation-delay: 300ms;
 }
+
 .delay-400 {
   animation-delay: 400ms;
 }
+
 .delay-500 {
   animation-delay: 500ms;
 }
