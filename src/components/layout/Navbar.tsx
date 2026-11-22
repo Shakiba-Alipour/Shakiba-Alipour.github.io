@@ -38,15 +38,15 @@ function NavItem({ href, label, isActive, onClick }: NavItemProps) {
     <a
       href={href}
       onClick={onClick}
-      className={`
-        relative text-sm font-medium tracking-wide transition-colors duration-200
+      className={`relative text-sm font-medium tracking-wide transition-colors duration-200
+        text-text-secondary hover:text-primary-700
         after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full
-        after:origin-left after:scale-x-0 after:bg-accent after:transition-transform
-        after:duration-200 hover:after:scale-x-100
+        after:origin-left after:bg-primary-700 after:transition-transform
+        after:duration-200
         ${
           isActive
             ? "text-primary-700 after:scale-x-100"
-            : "text-text-secondary hover:text-primary-700"
+            : "after:scale-x-0 hover:after:scale-x-100"
         }
       `}
     >
@@ -59,13 +59,12 @@ function DownloadResumeButton({ styles = "" }) {
   return (
     /* Download CV */
     <div
-      className={`hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}
+      className={`font-medium text-center hidden md:flex items-center justify-center hover:text-primary-700 ${styles}`}
     >
       <a
         href={siteConfig.cvPath}
         target="_blank"
         rel="noopener noreferrer"
-        className="font-medium text-center hidden md:flex items-center justify-center"
       >
         My CV
       </a>

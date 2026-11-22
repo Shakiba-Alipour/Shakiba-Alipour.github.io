@@ -23,8 +23,10 @@ function App() {
           }
         });
       },
-      // rootMargin: trigger when section hits 30% from the top
-      { threshold: 0.3 },
+      {
+        rootMargin: "-20% 0px -70% 0px",
+        threshold: 0,
+      },
     );
 
     // Observe every section that has an id matching a nav link
